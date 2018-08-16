@@ -44,6 +44,30 @@
   height: 570px !important;
 
 }
+ 
+ .cloud {
+  width: 100px;
+  height: 100px;
+  display: table;
+  background-color: #000;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 50% 50% 50% 0;
+  box-shadow: 0 0 0 5px #000;
+  
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  
+  &-text {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+  }
+}
 
 .wwp-text {
   margin-top: 130px !important;
