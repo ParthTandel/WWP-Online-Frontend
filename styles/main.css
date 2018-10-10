@@ -1,9 +1,13 @@
+body {
+  font-size: 18px;
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
 #wwvt-home {
   margin-left: 1rem;
   align-self: center;
   color: #fefefe;
   font-size: 1.35rem;
-  font-family: 'Raleway', sans-serif;
 }
 
 #wwvt-home:hover {
@@ -11,14 +15,13 @@
   text-decoration: none;
 }
 
-.main-body
-{
+.main-body {
   max-width: 1080px;
-  margin: 130px auto 0 !important;
+  margin: 130px auto 70px !important;
   float: none !important;
 }
 
-.nav-over-flow{
+.nav-over-flow {
   background-color: #343a40!important
 }
 
@@ -85,7 +88,7 @@
 
 }
  
- .cloud {
+.cloud {
   width: 100px;
   height: 100px;
   display: table;
@@ -101,17 +104,15 @@
   left: 0;
   right: 0;
   margin: auto;
-  
-  &-text {
-    display: table-cell;
-    vertical-align: middle;
-    text-align: center;
-  }
+}
+
+.cloud-text {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
 }
 
 .wwp-text {
   margin-top: 130px !important;
-  font-size: 18px;
-  font-family: 'Raleway', sans-serif;
   text-align: justify;
 }

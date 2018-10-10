@@ -1,12 +1,7 @@
-
-.glossary-body
-{
-  max-width: 700;
+.glossary-body {
+  max-width: 700px;
   margin: 130px auto 0 !important;
   float: none !important;
-  text-align: justify;
-  font-size: 18px;
-  font-family: 'Raleway', sans-serif;
   text-align: justify;
 }
 
