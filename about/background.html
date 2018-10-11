@@ -2,6 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 						<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 						<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 						<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
@@ -11,7 +12,7 @@
 						<!-- <script>window.jQuery || document.write('<script src="assets/vendor/jquery-1.11.3.min.js"><\/script>')</script> -->
 						<!--<link rel="stylesheet" href="../frame-carousel/jquery.frame-carousel.min.css">
 						<script type="text/javascript" src="../frame-carousel/jquery.frame-carousel.min.js"></script>-->
-						<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400italic,600&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css"/>
 
 
 
@@ -50,58 +51,51 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item">
-                <div class="btn-group">
-                  <div class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    About
-                  </div>
-                  <div class="dropdown-menu">
-                    <a class="dropdown-item" href="background.html">About Women Writers
-                      Vector Toolkit</a>
-                    <a class="dropdown-item" href="how-to-navigate.html">How to Navigate</a>
-                    <a class="dropdown-item" href="team.html">Team Members</a>
-                  </div>
-                </div>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../tool/index.html">Tool</a>
-              </li>
-              <li class="nav-item">
-                <div class="btn-group">
-                  <div class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Resources
-                  </div>
-                  <div class="dropdown-menu">
-                    <a class="dropdown-item" href="../resources/index.html">About Resources</a>
-                    <a class="dropdown-item" href="../resources/glossary/index.html">Glossary</a>
-                    <!-- <a class="dropdown-item" href="#">Case Studies</a> --> 
-                    <a class="dropdown-item" href="../resources/sources/index.html">Helpful Sources</a>
-                  </div>
-                  <div class="dropdown-menu">
-                    ...
-                  </div>
-                </div>
-              </li>
-              <li class="nav-item">
-                <div class="btn-group">
-                  <div class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Teaching &amp; Exploration
-                  </div>
-                  <div class="dropdown-menu">
-                    <a class="dropdown-item" href="../teaching-exploration/index.html">Teaching with this Tool</a>
-                    <a class="dropdown-item" href="../teaching-exploration/assignments/index.html">Assignments</a>
-                  </div>
-                  <div class="dropdown-menu">
-                    ...
-                  </div>
-                </div>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../methodology/index.html">Methodology</a>
-              </li>
-              
-            </ul>
+             <ul class="navbar-nav ml-auto">
+                                <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="../about/background.html" aria-haspopup="true" id="about" aria-expanded="false">
+                                            About
+                                        </a>
+                                        <div class="dropdown-menu" aria-labelledby="about">
+                                            <a class="dropdown-item" href="../about/background.html">About Women Writers Vector
+                                                Toolkit</a>
+                                            <a class="dropdown-item" href="../about/how-to-navigate.html">How to Navigate</a>
+                                            <a class="dropdown-item" href="../about/team.html">Team</a>
+                                        </div>
+
+                                    
+                                    <li class="nav-item">
+                                         <a class="nav-link" href="../tool/index.html">Tool</a>
+                                        
+                                        <li class="nav-item dropdown">
+                                                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="../resources/index.html"  id="resources" aria-haspopup="true" aria-expanded="false">
+                                                    Resources
+                                                </a>
+                                                <div class="dropdown-menu" aria-labelledby="resources">
+                                                    <a class="dropdown-item"
+                                                        href="../resources/index.html">About Resources</a>
+                                                    <a class="dropdown-item" href="../resources/glossary/index.html">Glossary</a>
+                                                   <!-- <a class="dropdown-item" href="#">Case Studies</a> --> 
+                                                    <a class="dropdown-item" href="../resources/sources/index.html">Helpful Sources</a>
+                                                </div>
+                                            
+                                            <li class="nav-item dropdown">
+                                                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="../teaching-exploration/index.html" id="teaching" aria-haspopup="true" aria-expanded="false">
+                                                        Teaching &amp; Exploration
+                                                    </a>
+                                                    <div class="dropdown-menu" aria-labelledby="teaching">
+                                                        <a class="dropdown-item"
+                                                            href="../teaching-exploration/index.html">Teaching with this Tool</a>
+                                                        <!--<a class="dropdown-item" href="#">Suggested Searches</a>-->
+                                                        <a class="dropdown-item" href="../teaching-exploration/assignments/index.html">Assignments</a>
+                                                    </div>
+
+                                                <li class="nav-item">
+                                                    <a class="nav-link" href="../methodology/index.html">Methodology</a>
+                                                    
+                                                    
+                            </ul>
+>>>>>>> master
           </div>
           
           
@@ -147,9 +141,7 @@
 							<div class="wwp-text">
 															<h4 style="text-align: center;">Background about the word to vec projects</h4>
 								<p> 
-									This project is a result of the the Northeastern Tier 1 Seedling Grant titled &quot;Word Vector Analysis for TEI/XML: A user-friendly toolkit.&quot; This project merges expertises across the Humanities, Information Sciences, and Computer Science, from the graduate to the professional level, to create a pedagogical space that documents the process of analyzing TEI/XML encoded corpora using word vector models. 
-
-									This toolkit demonstrates how to transform TEI/XML encoded data using XSLT and XQuery, create word vector models based on those results, and implement different pedagogical approaches in the classroom using these word vector models. While this project uses the Women Writers Online corpus, the process for reshaping the TEI/XML encoded documents and for creating word vector models can be applied to different TEI/XML encoded corpora. We hope to be a platform and example for others who wish to implement similar tools for their own corpora.
+									This project is a result of the Northeastern Tier 1 Seedling Grant titled &quot;Word Vector Analysis for TEI/XML: A user-friendly toolkit.&quot; This project merges expertises across the Humanities, Information Sciences, and Computer Science disciplines, from the graduate to the professional level, to create a pedagogical space that documents the process of analyzing TEI/XML encoded corpora using word vector models. This toolkit demonstrates how to transform TEI/XML encoded data using XSLT and XQuery, create word vector models based on those results, and implement different pedagogical approaches in the classroom using these word vector models. While this project uses the Women Writers Online corpus, the process for reshaping the TEI/XML encoded documents and for creating word vector models can be applied to different TEI/XML encoded corpora. We hope to be a platform and example for others who wish to implement similar tools for their own corpora.
 
 								</p>
 						<br/>
@@ -242,4 +234,5 @@
 					       'frame-carousel/sample/13.png']
 					   });
 					</script>-->
-					</html>
+    <script type="text/javascript" src="../scripts/mobile-dropdown.js"/>
+	</html>
