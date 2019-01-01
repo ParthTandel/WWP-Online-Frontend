@@ -1,7 +1,8 @@
 .column {
     float: left;
     width: 33.33%;
-    padding: 30px;
+    padding: 20px;
+    
 }
 
 @media screen and (max-width:600px) {
@@ -19,5 +20,23 @@
 .heading {
     text-align: left;
     font-weight: bold;
+}
+
+.image-prev{
+    height: 300px
+}
+
+.image{
+   height: 400px
+}
+
+.figcaption {
+    font: italic smaller sans-serif;
+    padding: 3px;
+    text-align: center;
+}
+
+.title{
+    text-align: center
 }
 

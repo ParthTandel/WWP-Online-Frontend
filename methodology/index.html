@@ -1,177 +1,198 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Methodology | Women Writers Vector Toolkit</title>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <link rel="shortcut icon" href="/utils/gfx/favicon.ico" />
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
-  <link rel="stylesheet" href="../styles/main.css">
-  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> -->
-  <!-- <script>window.jQuery || document.write('<script src="assets/vendor/jquery-1.11.3.min.js"><\/script>')</script> -->
-  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400italic,600&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css"/>
-</head>
-  <body>
-    <header>
-      
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-        <div class="container">
-          <div class="d-inline-flex">
-            <img src="../assets/logo.png" width="61" height="52" class="d-inline-block align-top" alt="">
-              <a href="../index.html" id="wwvt-home">Women Writers Vector Toolkit</a>
-          </div>
-          <div>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-              <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                  <a class="nav-link" href="http://lab.wwp.northeastern.edu/wwvt/">Word Vector Interface</a>
-                </li>
-                <li class="nav-item">
-                  <div class="btn-group">
-                    <div class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      About
-                    </div>
-                    <div class="dropdown-menu">
-                      <a class="dropdown-item" href="../about/about-wwvt/index.html">About the WWVT</a>
-                      <a class="dropdown-item" href="../about/navigate/index.html">How to Navigate</a>
-                      <a class="dropdown-item" href="../about/team/index.html">Team</a>
-                    </div>
-                  </div>
-                </li>
-                <li class="nav-item">
-                  <div class="btn-group">
-                    <div class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Resources
-                    </div>
-                    <div class="dropdown-menu">
-                      <a class="dropdown-item" href="../resources/glossary/index.html">Glossary</a>
-                      <!--<a class="dropdown-item" href="#">Case Studies</a>-->
-                      <a class="dropdown-item" href="../resources/sources/index.html">Helpful Sources</a>
-                    </div>
-                    <div class="dropdown-menu">
-                      ...
-                    </div>
-                  </div>
-                </li>
-                <li class="nav-item">
-                  <div class="btn-group">
-                    <div class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Teaching Guide
-                    </div>
-                    <div class="dropdown-menu">
-                      <a class="dropdown-item" href="../teaching-exploration/index.html">Teaching with this Tool</a>
-                      <!-- <a class="dropdown-item" href="#">Suggested Searches</a> -->
-                      <a class="dropdown-item" href="../teaching-exploration/assignments/index.html">Assignments</a>
-                    </div>
-                    <div class="dropdown-menu">
-                      ...
-                    </div>
-                  </div>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="../methodology/index.html">Methodology</a>
-                </li>
-                
-              </ul>
-            </div>
-            
-            
-          </div>
-        </div>
-      </nav>
-    </header>
-    
-    <div class="main-body">
-      <h1 class="text-center">Methodology</h1>
-      
-      <h2>The Word Vector Interface</h2>
-      <p>Code for the Word Vector Interface can be found on GitHub at 
-        <a href="https://github.com/NEU-DSG/wwp-w2vonline" target="_blank">https://github.com/NEU-DSG/wwp-w2vonline</a>. 
-        The Interface itself is an <a href="https://shiny.rstudio.com" class="link link-external" target="_blank">RStudio 
-        Shiny</a> application developed by Jonathan D. Fitzgerald and Parth Tandel. It uses Benjamin Schmidt’s R package 
-        <a href="https://github.com/bmschmidt/wordVectors" class="link link-external" target="_blank">wordVectors</a> 
-        to create and query models of words.</p>
-      <p>The GitHub repository includes copies of the models, as well as a JSON catalog of those models and instructions
-        for running the application yourself.</p>
-      
-      <h2>Corpora</h2>
-      <p>The <a href="https://wwp.northeastern.edu/wwo/texts" target="_blank">Women Writers Online (WWO) corpus</a> 
-        represents works published between 1400 and 1850 which were authored, translated, or compiled by women. The 
-        corpus is available online to subscribing institutions or individuals. The XML files are freely 
-        available on request. For consideration, send an email with a brief description of your research to 
-        <a href="mailto:wwp@&#x006E;ortheastern&#x002E;&#x0065;&#x0064;&#x0075;">wwp@&#x006E;ortheastern&#x002E;&#x0065;&#x0064;&#x0075;</a>.</p>
-      <p>The Interface also includes documents from<!-- the 
-        <a href="http://webapp1.dlib.indiana.edu/vwwp/" target="_blank">Victorian Women Writers Project</a> (VWWP) and--> 
-        <a href="https://eebo.chadwyck.com/home" target="_blank">Early English Books Online</a> (EEBO). The EEBO corpus 
-        is designed as a parallel corpus to the WWP. We randomly selected texts from EEBO and then pulled the same number 
-        of words from each century. The EEBO corpus approximately mirrors the combined WWP-century corpora. </p>
-      <p>Each corpus was transcribed and encoded in XML, following the 
-        <a href="https://www.tei-c.org/" class="link link-external" target="_blank">Text Encoding Initiative (TEI)</a> 
-        guidelines. For this project, the XML files were then transformed into normalized plain text using 
-        <a href="https://github.com/NEU-DSG/wwp-public-code-share/tree/master/fulltext" 
-          class="link link-external" target="_blank">XSLT and XQuery scripts</a> (described below).</p>
-      
-      <h3>Corpus Preparation</h3>
-      <p>We transformed the WWO corpus to improve the results of word2vec with XSLT and XQuery. XSLT and XQuery are 
-        native programming languages for Extensible Markup Language (XML). XSLT (Extensible Stylesheet Language 
-        Transformation) allows us to make programmatic changes to the XML structure of the WWO corpus. XQuery is designed
-        for retrieving and interpreting information. Together, these languages move through the XML tree structures of WWO
-        files and alter the encoding of pre-specified elements.</p>
-      <p>For instance, textual instances of abbreviations are expanded within our XML elements.</p>
-      <!-- Snapshot example of XML/TEI and transformed text -->
-      <p>In addition to transforming the styling of some elements, we also remove elements that skew word embedding results. 
-        XQuery removes TEI metadata and data from the file that we produced while marking up the text. It also allows us to 
-        extract specific sections of the document using XPath.</p>
-      <!-- Full list: ('castList', 'elision', 'figDesc', 'label', 'speaker') with an example -->
-      
-      <h3>Corpus Parsing</h3>
-      <p>The Women Writers Vector Toolkit (WWVT) provides various models for literary exploration and comparison. We have 
-        segmented the WWO corpus into different subsets to create different models. In addition to two models that include 
-        every file in the WWO (one with front and back matter and one with only the body content), models are separated 
-        into three categories: centuries, publication place, and specific elements.</p>
-      <p>The WWO corpus spans more than three centuries from 1526 to 1850. Every file in the corpus contains a canonical 
-        date of the text’s first edition. These dates are used to sort and combine plain text files into a single text file 
-        with each file containing all documents from a single century, except for the 16th century, which has been merged 
-        with the 17th century text file. The 16th and 17th centuries together provide enough words for an accurate model and
-        are approximately the same size as the 18th- and 19th-century models. These files, once modeled, can be used for 
-        diachronic studies of literary and cultural change.</p>
-      <p>Similarly, the WWO records the place of publication for each file. This information is leveraged in the same way as 
-        dates to create single plain text files of documents published inside and outside the United States. These models 
-        can be useful for exploring possible language variations across space and cultures.</p>
-      <p>Lastly, the WWO allows for word usage across writing styles. Elements representing prose (paragraphs: &lt;p&gt;) and 
-        verse (line groups: &lt;lg&gt;) allow the corpus to be crudely partitioned along genre. These models highlight how 
-        context inflects word meaning and usage.</p>
-      <p>The Python code that parses and creates these datasets is a twofold process. First, the parser opens every file in a 
-        directory, looking for the canonical publication date. Once found, it uses the filename to retrieve the clean and 
-        regularized text files produced by the XSLT and XQuery preparation. After it has gathered the publication date and the 
-        clean text, it writes the text to the text file designated by the file’s date. It repeats this process for publication 
-        place and elements.</p>
-      <!--<p>We have also created models of <!-\-the 
-        <a href="http://webapp1.dlib.indiana.edu/vwwp/" target="_blank">Victorian Women Writers Project</a> (VWWP) and of-\-> 
-        <a href="https://eebo.chadwyck.com/home" target="_blank">Early English Books Online</a> (EEBO). 
-        <!-\-The VWWP corpus contains all of the body content from their corpus. We have two variants of the VWWP texts: one with 
-        Morphadorner applied and one without.-\-> The EEBO corpus is designed as a parallel corpus to the WWP. We randomly 
-        selected texts from EEBO and then pulled the same number of words from each century. The EEBO corpus approximately 
-        mirrors the combined WWP-century corpora.</p>-->
-      
-      <h3>Model Testing</h3>
-      <p>Once the plain text of each file has been cleaned, normalized, sorted, and combined, the resulting text files can be 
-        fed into word2vec to be modeled. We tested the parameters of various word embedding models to choose the best fit for 
-        our data. Using 27 pairs of words and determining their cosine similarities, we found that we obtained the best results 
-        from a model created with a window size of 6 words, 100 vectors, 10 iterations, and negative sampling set at 15. Models 
-        produced from the smallest datasets varied slightly with a negative sampling set at 5.</p>
-      <p>With the model parameters in place, we then tested our three processes for regularization: XSLT and XQuery alone, 
-        Northwestern University’s Morphadorner, and Morphadorner tuned to be sensitive to Early Modern English vocabularies and 
-        spelling practices. We again used the 27 word-pairings and found that the XSLT and XQuery alone produced the best 
-        results by a slight amount.</p>      
-      
-    </div>
-  </body>
-    <script type="text/javascript" src="../scripts/mobile-dropdown.js" />
-</html>
+	<!DOCTYPE html>
+	<html>
+	<head>
+		<title>Methodology | Women Writers Vector Toolkit</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="../styles/main.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+		<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400italic,600&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css"/>
+	</head>
+	<body>
+		<header>
+
+			<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+				<div class="container">
+					<div class="d-inline-flex">
+						<img src="../assets/logo.png" width="61" height="52" class="d-inline-block align-top" alt="">
+						<a href="../index.html" id="wwvt-home">Women Writers Vector Toolkit</a>
+					</div>
+					<div>
+						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+						<div class="collapse navbar-collapse" id="navbarResponsive">
+							<ul class="navbar-nav ml-auto">
+								<li class="nav-item">
+									<a class="nav-link" href="http://lab.wwp.northeastern.edu/wwvt/">Word Vector Interface</a>
+								</li>
+								<li class="nav-item dropdown">
+									<a class="nav-link dropdown" data-toggle="dropdown" href="../about/about-wwvt/index.html" id="about" aria-haspopup="true" aria-expanded="false">
+										About
+										<i class="fa fa-caret-down"></i>
+									</a>
+									<div class="dropdown-menu" aria-labelledby="about">
+										<a class="dropdown-item" href="../about/about-wwvt/index.html">About the WWVT</a>
+										<a class="dropdown-item" href="../about/navigate/index.html">How to Navigate</a>
+										<a class="dropdown-item" href="../about/team/index.html">Team</a>
+									</div>
+								</li>
+								<li class="nav-item dropdown">
+									<a class="nav-link dropdown" data-toggle="dropdown" href="../resources/index.html" id="resource" aria-haspopup="true" aria-expanded="false">
+										Resources
+										<i class="fa fa-caret-down"></i>
+									</a>
+									<div class="dropdown-menu" aria-labelledby="resource">
+										<a class="dropdown-item" href="../resources/glossary/index.html">Glossary</a>
+										<a class="dropdown-item" href="../resources/case-studies/index.html">Case Studies</a>
+										<a class="dropdown-item" href="../resources/sources/index.html">Helpful Sources</a>
+									</div>
+								</li>
+								<li class="nav-item dropdown">
+									<a class="nav-link dropdown" data-toggle="dropdown" href="../teaching-exploration/index.html" id="teaching"  aria-haspopup="true" aria-expanded="false">
+										Teaching Guide
+										<i class="fa fa-caret-down"></i>
+									</a>
+									<div class="dropdown-menu" aria-labelledby="teaching">
+										<a class="dropdown-item" href="../teaching-exploration/index.html">Teaching with this Tool</a>
+										<a class="dropdown-item" href="../teaching-exploration/assignments/index.html">Assignments</a>
+									</div>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="../methodology/index.html">Methodology</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</nav>
+		</header>
+
+		<div class="main-body">
+			<div class="wwp-text">
+				<div class="container">
+					<div class="row justify-content-center">
+						<div class="col">
+							<div class="title"><center><h2>Methodology</h2></center></div>
+							<br/>
+							<h3>The Word Vector Interface</h3>
+							<p>Code for the Word Vector Interface can be found on GitHub at 
+								<a href="https://github.com/NEU-DSG/wwp-w2vonline" target="_blank">https://github.com/NEU-DSG/wwp-w2vonline</a>. 
+								The Interface itself is an <a href="https://shiny.rstudio.com" class="link link-external" target="_blank">RStudio 
+								Shiny</a> application developed by Jonathan D. Fitzgerald and Parth Tandel. It uses Benjamin Schmidt’s R package 
+								<a href="https://github.com/bmschmidt/wordVectors" class="link link-external" target="_blank">wordVectors</a> 
+							to create and query models of words.</p>
+							<p>The GitHub repository includes copies of the models, as well as a JSON catalog of those models and instructions
+							for running the application yourself.</p>
+
+							<h3>Corpora</h3>
+							<p>The <a href="https://wwp.northeastern.edu/wwo/texts" target="_blank">Women Writers Online (WWO) corpus</a> 
+								represents works published between 1400 and 1850 which were authored, translated, or compiled by women. The 
+								corpus is available online to subscribing institutions or individuals. The XML files are freely 
+								available on request. For consideration, send an email with a brief description of your research to 
+								<a href="mailto:wwp@&#x006E;ortheastern&#x002E;&#x0065;&#x0064;&#x0075;">wwp@&#x006E;ortheastern&#x002E;&#x0065;&#x0064;&#x0075;</a>.
+							</p>
+							<p>The Interface also includes documents from
+								<a href="https://eebo.chadwyck.com/home" target="_blank">Early English Books Online</a> (EEBO). The EEBO corpus 
+								is designed as a parallel corpus to the WWP. We randomly selected texts from EEBO and then pulled the same number 
+							of words from each century. The EEBO corpus approximately mirrors the combined WWP-century corpora. </p>
+							<p>Each corpus was transcribed and encoded in XML, following the 
+								<a href="https://www.tei-c.org/" class="link link-external" target="_blank">Text Encoding Initiative (TEI)</a> 
+								guidelines. For this project, the XML files were then transformed into normalized plain text using 
+								<a href="https://github.com/NEU-DSG/wwp-public-code-share/tree/master/fulltext" 
+								class="link link-external" target="_blank">XSLT and XQuery scripts</a> (described below).</p>
+
+								<h4>Corpus Preparation</h4>
+								<p>We transformed the WWO corpus to improve the results of word2vec with XSLT and XQuery. XSLT and XQuery are 
+									native programming languages for Extensible Markup Language (XML). XSLT (Extensible Stylesheet Language 
+									Transformation) allows us to make programmatic changes to the XML structure of the WWO corpus. XQuery is designed
+									for retrieving and interpreting information. Together, these languages move through the XML tree structures of WWO
+								files and alter the encoding of pre-specified elements.</p>
+								<p>For instance, textual instances of abbreviations are expanded within our XML elements.</p>
+								<p>In addition to transforming the styling of some elements, we also remove elements that skew word embedding results. 
+									XQuery removes TEI metadata and data from the file that we produced while marking up the text. It also allows us to 
+								extract specific sections of the document using XPath.</p>
+
+
+
+								<h4>Corpus Parsing</h4>
+								<p>The Women Writers Vector Toolkit (WWVT) provides various models for literary exploration and comparison. We have 
+									segmented the WWO corpus into different subsets to create different models. In addition to two models that include 
+									every file in the WWO (one with front and back matter and one with only the body content), models are separated 
+								into three categories: centuries, publication place, and specific elements.</p>
+								<p>The WWO corpus spans more than three centuries from 1526 to 1850. Every file in the corpus contains a canonical 
+									date of the text’s first edition. These dates are used to sort and combine plain text files into a single text file 
+									with each file containing all documents from a single century, except for the 16th century, which has been merged 
+									with the 17th century text file. The 16th and 17th centuries together provide enough words for an accurate model and
+									are approximately the same size as the 18th- and 19th-century models. These files, once modeled, can be used for 
+								diachronic studies of literary and cultural change.</p>
+								<p>Similarly, the WWO records the place of publication for each file. This information is leveraged in the same way as 
+									dates to create single plain text files of documents published inside and outside the United States. These models 
+								can be useful for exploring possible language variations across space and cultures.</p>
+								<p>Lastly, the WWO allows for word usage across writing styles. Elements representing prose (paragraphs: &lt;p&gt;) and 
+									verse (line groups: &lt;lg&gt;) allow the corpus to be crudely partitioned along genre. These models highlight how 
+								context inflects word meaning and usage.</p>
+								<h4>EEBO Corpora Preparation and Parsing</h4>
+								<p>The EEBO corpus is designed as a parallel corpus to the WWP, approximating the word-count per century in Women 
+								Writers Online. To collect texts from EEBO, a Python script follows this process:</p>
+								<p>Each document in the EEBO corpus is categorized by the century in which it was originally published: 17th century, 
+									18th century, or 19th century. Documents without a source publication date are passed over. Once the century has been 
+									identified, the document’s source author, publication date, and publication place are added to a tab-separated 
+								catalog.</p>
+								<p>The document’s textual content (from &lt;text&gt;) is minimally regularized. Newlines and tabs are reduced to a 
+									single space. Word by word, with whitespace used as a delimiter, the long-s character (“ſ”) is regularized to “s”. 
+									Each word is added to the matching century subcorpus as well as the all-centuries EEBO subcorpus. At the same time, 
+								the Python script increments the total number of words gathered for the given century.</p>
+								<p>When a particular century has a total word-count that meets or exceeds the target word-count, no further documents 
+								from that century will be added to the subcorpora or the catalog.</p>
+								<center>
+								<table>
+									<thead>
+										<tr>
+											<th>Century</th>
+											<th>Maximum words</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>17th</td>
+											<td>4000000</td>
+										</tr>
+										<tr>
+											<td>18th</td>
+											<td>4000000</td>
+										</tr>
+										<tr>
+											<td>19th</td>
+											<td>1</td>
+										</tr>
+									</tbody>
+								</table>
+							</center>
+
+<br/>
+								<h3>Model Testing</h3>
+								<p>Once the plain text of each file has been cleaned, normalized, sorted, and combined, the resulting text files can be 
+									fed into word2vec to be modeled. We tested the parameters of various word embedding models to choose the best fit for 
+									our data. Using 27 pairs of words and determining their cosine similarities, we found that we obtained the best results 
+									from a model created with a window size of 6 words, 100 vectors, 10 iterations, and negative sampling set at 15. Models 
+								produced from the smallest datasets varied slightly with a negative sampling set at 5.</p>
+								<p>With the model parameters in place, we then tested our three processes for regularization: XSLT and XQuery alone, 
+									Northwestern University’s Morphadorner, and Morphadorner tuned to be sensitive to Early Modern English vocabularies and 
+									spelling practices. We again used the 27 word-pairings and found that the XSLT and XQuery alone produced the best 
+								results by a slight amount.</p>
+
+
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+					<script type="text/javascript" src="../scripts/mobile-dropdown.js" ></script>
+		</body>
+		</html>
