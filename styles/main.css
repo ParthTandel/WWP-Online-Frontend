@@ -174,3 +174,16 @@ h4 {
   margin-right: 0;
   font-weight: bold;
 }
+
+.video-frame {
+  min-height: 200px;
+  min-width: 400px;
+}
+
+@media screen and (max-width: 400px) {
+  .video-frame {
+    width: 90%;
+    min-height: auto;
+    min-width: auto;
+  }
+}
