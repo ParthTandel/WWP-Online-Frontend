@@ -74,6 +74,13 @@ body {
 
 .carousel-view-pane {
   display: flex;
+  height: 540px;
+  align-items: stretch;
+}
+
+.carousel-view-pane .carousel-inner {
+  display: inline-flex;
+  align-items: flex-start;
 }
 
 .carousel-item {
