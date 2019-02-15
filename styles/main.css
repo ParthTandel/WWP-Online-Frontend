@@ -38,7 +38,7 @@ body {
       position: relative !important;
   }
   
-  .dropdown-submenu>.dropdown-menu {
+  .dropdown-submenu  > .dropdown-menu {
       top: 0 !important;
       left: 100% !important;
       margin-top: -6px !important;
@@ -66,6 +66,10 @@ body {
   margin: 1em 0;
   padding: 1.5em 0 2em;
   background-color: #ddd;
+}
+
+.carousel-sm {
+  width: 80%;
 }
 
 .carousel-view-pane {
