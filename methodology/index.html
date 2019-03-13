@@ -85,7 +85,7 @@
      							<a href="https://github.com/NEU-DSG/wwp-w2vonline" class="link link-external" target="_blank">https://github.com/NEU-DSG/wwp-w2vonline</a>. 
      							The Interface itself is an <a href="https://shiny.rstudio.com" class="link link-external" target="_blank">RStudio 
      							Shiny</a> application developed by Jonathan D. Fitzgerald and Parth Tandel. It uses Benjamin Schmidt’s R package 
-     							<a href="https://github.com/bmschmidt/wordVectors" class="link link-external" target="_blank">wordVectors</a> 
+     							<a href="https://github.com/bmschmidt/wordVectors" class="link link-external" target="_blank">wordVectors</a> (which itself includes a version of Tomas Mikolov’s original <a href="https://github.com/tmikolov/word2vec">code for word2vec</a>)
      						  to train and query word embedding models.</p>
      						<p>The GitHub repository includes copies of the models used in the Word Vector Interface, as well as a JSON catalog 
      						  containing descriptions of those models<!-- and instructions for running the application yourself-->.</p>
@@ -96,21 +96,21 @@
 							  <p>The Word Vector Interface is powered by three collections of documents from three different projects. 
 								  Each corpus was transcribed and encoded in XML, following the guidelines of the 
 									<a href="https://www.tei-c.org/" class="link link-external" target="_blank">Text Encoding Initiative (TEI)</a>. 
-							    By using transcriptions marked up in TEI, we were able to make choices about the textual features used to generate 
+							    By using texts marked up in TEI, we were able to make detailed choices about the textual features used to generate 
 							    the word embedding models.
 								  <!--For this project, the XML files were gathered and then transformed into normalized plain text using 
 									<a href="https://github.com/NEU-DSG/wwp-public-code-share/tree/master/fulltext" 
 									class="link link-external" target="_blank">XSLT and XQuery scripts</a> (described in  below).--></p>
 								<p>The Women Writers Project’s <a href="https://wwp.northeastern.edu/wwo/texts" target="_blank">Women Writers Online</a>
-								  (WWO) corpus represents works which were authored, translated, or compiled by women, and published before 1850. The 
-									corpus is available online to subscribing institutions or individuals. The XML files are freely 
+								  (WWO) corpus collects works which were authored, translated, or compiled by women, and published before 1850. The 
+								  corpus is available online to subscribing institutions or individuals, and information on one-month free trials is available <a href="https://wwp.northeastern.edu/wwo/license/">here</a>. The XML files are freely 
 									available on request. For consideration, send an email with a brief description of your research to 
 									<a href="mailto:wwp@&#x006E;ortheastern&#x002E;&#x0065;&#x0064;&#x0075;">wwp@&#x006E;ortheastern&#x002E;&#x0065;&#x0064;&#x0075;</a>.</p>
 								<p>The Interface also includes models trained on texts from
 									<a href="https://eebo.chadwyck.com/home" class="link link-external" target="_blank">Early English Books Online</a> 
-								  (EEBO). EEBO is a digital collection of works published in English before 1700, augmented with text transcriptions by the 
+									(EEBO) and the <a href="https://webapp1.dlib.indiana.edu/vwwp/welcome.do;jsessionid=D4020148F707FB298ED2B48F992EDFDC">Victorian Women Writers Project</a> (VWWP). EEBO is a digital collection of works published in English before 1700, augmented with text transcriptions by the 
 								  Text Creation Partnership (TCP). From the vast EEBO-TCP corpus, we selected sub-corpora which roughly mirror the WWO corpus
-								  in number of words per century.</p>
+								  in number of words per century. The VWWP began at Indiana University in 1995 and is concerned with the exposure of lesser-known British women writers of the 19th century. The collection includes includes a range of genres, including: poetry, novels, children's books, political pamphlets, religious tracts, and histories.</p>
 							  <!-- VWWP -->
 								
 
