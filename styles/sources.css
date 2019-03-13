@@ -1,3 +1,8 @@
+section.sources {
+  margin: 1.5em 0;
+  
+}
+
 .sources-collapsible {
     background-color: #777;
     color: white;
@@ -8,9 +13,12 @@
     text-align: left;
     outline: none;
     font-size: 15px;
+    display: flex;
+    justify-content: space-between;
 }
 
-.sources-active, .collapsible:hover {
+.sources-collapsible.active,
+.sources-collapsible:hover {
     background-color: #555;
 }
 
@@ -22,7 +30,7 @@
     margin-left: 5px;
 }
 
-.sources-active:after {
+.sources-collapsible.active:after {
     content: "\2212";
 }
 
@@ -46,8 +54,10 @@
 
 h2 { 
   font-size: 1em;
-  margin-top: 0;
-  margin-bottom: 0;
-  margin-left: 0;
-  margin-right: 0;
+  font-weight: normal;
+  margin: 0;
+}
+
+h3 {
+  margin-top: 1.5em;
 }
