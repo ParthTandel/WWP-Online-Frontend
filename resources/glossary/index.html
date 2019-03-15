@@ -96,13 +96,13 @@
 							<!--<dt>Digital Humanities</dt>
 							<dd>This definition can be very basic or very complex. Some argue that the baseline definition of digital humanities is the field in which computational skills and tools are used in the humanities disciplines, for things like text analysis, mapping, presentations. Others argue digital humanities is a field for critiquing computational tools and better understanding the social, cultural, and political impacts of these tools.</dd> SC: I don't think that we need this and I think it's potentially distracting.-->
 							<dt>Documentation</dt>
-							<dd>A way of providing information about the choices made in a project; documentation is useful for accessibility, transparency, and archiving. In this case, we have documentation about how the code was created, how corpora were selected, and more.</dd>
+							<dd>A way of providing information about the choices made in a project; documentation is useful for accessibility, transparency, and archiving. On this site, we have documentation about how the code was implemented, how corpora were selected and prepared, and more.</dd>
 							<dt>Model</dt>
 							<dd>A representation of a concept or thing. When created for analysis, models are distillations of available data. Models are always lossy compared to the original versions—they reduce complexity in order to aid understanding. Because of this, models must be constructed carefully, so that loss is minimized in areas where the model needs to be representative. For this project, we used textual models (XML representations of actual books) to create word embedding models.</dd>
 							<!--<dt>Pedagogy</dt>
 							<dd>The method and practice of teaching something – particularly teaching with theories in particular academic subjects. In this case, we will be providing a pedagogical approach to using word vector analysis and textual analysis in the classroom.</dd>-->
 							<dt>Quantitative Method</dt> <!-- Do we need this? -->
-							<dd>A way of presenting and studying data through the representation of numbers or analyzing numbers.</dd>
+							<dd>A way of presenting and studying data through the representation or analysis of numbers.</dd>
 						  <dt>Programming Language</dt>
 						  <dd>A strictly-defined set of syntactical rules, used when writing or executing code. The term “programming language” may also be used more broadly to describe a language’s “implementations,” or, programs which read, validate, compile, or execute code.</dd>
 							<dt>R</dt>
@@ -113,15 +113,19 @@
 						  <dd>A question that drives a research project. Unlike a hypothesis, a research question is an actual question driven by research with a known or unknown answer. Hypotheses are statements about the relationship of things.</dd>-->
 							<!--<dt>Schema</dt>-->
 						  <dt>TEI</dt>
-							<dd>Stands for “<a href="http://www.tei-c.org/" target="_blank">Text Encoding Initiative</a>.” TEI is a collaborative XML schema that is used to standardize the markup of textual documents. <!--The TEI Consortium sets a standard for ways of digitally modeling humanities and social science research materials.--> The Women Writers Project uses TEI to encode all their texts and this project uses models trained on TEI-encoded files that have been selectively transformed into plain text.</dd>
-							<dt>Textbase</dt>
-							<dd><!--A textbase is similar to a database.-->A collection of textual documents which may have use as data.</dd>
+							<dd>Stands for “<a href="http://www.tei-c.org/" target="_blank">Text Encoding Initiative</a>.” TEI is a collaborative XML schema that is used to standardize the markup of textual documents. <!--The TEI Consortium sets a standard for ways of digitally modeling humanities and social science research materials.--> The Women Writers Project uses TEI to encode the texts in WWO and this project uses models trained on TEI-encoded files that have been selectively transformed into plain text.</dd>
+							<!--<dt>Textbase</dt>
+							<dd><!-\-A textbase is similar to a database.-\->A collection of textual documents which may have use as data.</dd>-->
 						<!--	<dt>Text encoding</dt>
 							<dd>Using pieces of texts as a base to mark up or encode parts of it. The Women Writers Project use TEI standards and XML (eXtensible Markup Language) rules for text encoding.</dd>-->
 						<!--	<dt><a href="https://wwp.northeastern.edu/">Women Writers Project</a> (WWP)</dt>
 							<dd>A long-term research project aiming to bring texts by pre-Victorian women writers out of the archive and make them accessible to a wide audience of teachers, students, scholars, and the general reader.</dd>-->
-							<dt>Word Vectors/Embeddings</dt> <!-- Needs to be fixed -->
-						  <dd>Word embeddings is the process in which texts are grouped together with numbers and then mapped onto a vector space (word vector). It produces a visual representation of these models and helps to quantify based on distributional properties.</dd>
+							<dt>Word Embedding Models</dt> <!-- Needs to be fixed -->
+						  <dd>Word embedding models are a technique from the fields of machine-learning and natural language processing
+						  	in which the words in large textual datasets are represented numerically and mapped to vectors. Essentially,
+						  	word embedding models allow for a spatial understanding of the words in a corpus, such that one can calculate
+						  	the proximitiy of particular words (closer words are those used in more similar contexts) as well as their
+						  	positioning along paths, or vectors (words on the same vector are those with similar relationships between each other). </dd>
 							<dt>XML</dt>
 							<dd>Stands for “eXtensible Markup Language.” Like HTML, XML uses tags<!-- define tags? --> to layer meaning and hierarchical relationships onto text. Unlike HTML, XML has no defined tag names, and is in fact customizable. Anyone can define their own flavor of XML; the only constraint is that XML documents must be well-formed (that is, a document has only one outermost tag, and all tags are closed). TEI is one such flavor of XML, as is XSLT.</dd>
 							<dt>XQuery</dt>
