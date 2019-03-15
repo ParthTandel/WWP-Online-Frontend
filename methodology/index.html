@@ -106,16 +106,15 @@
 								  corpus is available online to subscribing institutions or individuals, and information on one-month free trials is available <a href="https://wwp.northeastern.edu/wwo/license/">here</a>. The XML files are freely 
 									available on request. For consideration, send an email with a brief description of your research to 
 									<a href="mailto:wwp@&#x006E;ortheastern&#x002E;&#x0065;&#x0064;&#x0075;">wwp@&#x006E;ortheastern&#x002E;&#x0065;&#x0064;&#x0075;</a>.</p>
-								<p>The Interface also includes models trained on texts from
-									<a href="https://eebo.chadwyck.com/home" class="link link-external" target="_blank">Early English Books Online</a> 
-									(EEBO) and the <a href="https://webapp1.dlib.indiana.edu/vwwp/welcome.do;jsessionid=D4020148F707FB298ED2B48F992EDFDC">Victorian Women Writers Project</a> (VWWP). EEBO is a digital collection of works published in English before 1700, augmented with text transcriptions by the 
-								  Text Creation Partnership (TCP). From the vast EEBO-TCP corpus, we selected sub-corpora which roughly mirror the WWO corpus
+								<p>The Interface also includes models trained on texts from the <a href="https://webapp1.dlib.indiana.edu/vwwp/welcome.do;jsessionid=D4020148F707FB298ED2B48F992EDFDC">Victorian Women Writers Project</a> (VWWP), as well as the 
+									<a href="https://quod.lib.umich.edu/e/eebogroup/" class="link link-external" target="_blank">Early English Books Online</a> 
+									(EEBO), <a href="https://quod.lib.umich.edu/e/ecco/">Eighteenth-Century Collections Online</a> (ECCO), and <a href="https://quod.lib.umich.edu/e/evans/">Evans Early American Imprint</a> TEI texts published by the <a href="https://www.textcreationpartnership.org/">Text Creation Partnership</a> (TCP). From the vast TCP corpus, we selected sub-corpora which roughly mirror the WWO corpus
 								  in number of words per century. The VWWP began at Indiana University in 1995 and is concerned with the exposure of lesser-known British women writers of the 19th century. The collection contains a range of genres, including: poetry, novels, children’s books, political pamphlets, religious tracts, and histories.</p>
-							  <!-- VWWP -->
+							 
 								
 
 								<h3>Corpus Preparation</h3>
-							  <p>In order to get plain text out of the WWO’s XML, we transformed the corpus using XSLT and XQuery. XSLT and XQuery are 
+							  <p>In order to get plain text out of the WWO XML, we transformed the corpus using XSLT and XQuery. XSLT and XQuery are 
 									native programming languages for Extensible Markup Language (XML). XSLT (Extensible Stylesheet Language 
 									Transformation) allows us to make programmatic changes to the XML structure of the WWO corpus. XQuery is designed
 									for retrieving and interpreting information. Together, these languages move through the XML tree structures of WWO
@@ -128,9 +127,9 @@
 								<!-- Full list: ('castList', 'elision', 'figDesc', 'label', 'speaker') with an example -->
 
 								<h3>Corpus Parsing</h3>
-								<p>The Women Writers Vector Toolkit (WWVT) provides various models for literary exploration and comparison. <!--We have 
+								<p>The Women Writers Vector Toolkit (WWVT) provides various models for exploration and comparison. <!--We have 
 									segmented the WWO corpus into different subsets to create different models. -->In addition to two models that include 
-									every file in the WWO (one with front and back matter and one with only the content of the <code>&lt;body&gt;</code> element), the interface also 
+									every file in the WWO (one including front and back matter and one with exclusively the main body of each text), the interface also 
 									offers the option to compare models by publication date and by genre.</p>
 								<p>The WWO corpus spans more than three centuries<!-- from 1526 to 1850-->. Every file in the corpus contains the
 									date of the text’s first edition. These dates are used to sort and combine documents by their century of publication, 
@@ -142,15 +141,20 @@
 									For example, the interface contains two models, one trained on a corpus with exclusively the contents of paragraphs (the TEI <code>&lt;p&gt;</code> element) and the other with the contents of line groups (the TEI <code>&lt;lg&gt;</code> element), enabling a 
 									basic comparison between prose and verse.</p>
 
-								<h3>EEBO Corpora Preparation and Parsing</h3>
-								<p>The EEBO corpora are designed as parallels to the WWO corpus, approximating the word-counts per century in Women 
-								Writers Online. To collect texts from EEBO, we used a Python script which follows this process:</p>
-								<p>First, each document in the EEBO corpus is categorized by the century in which it was originally published: 17th century, 
+								<h3>TCP Corpora Preparation and Parsing</h3>
+								<p>The TCP corpora are designed as parallels to the WWO corpus, approximating the word-counts per century in Women 
+								Writers Online. To collect texts from the TCP files, we used a Python script which counts the words in the plain-text 
+								versions of each text and then uses publication date metadata to select a subset of texts from the 
+								TCP collection with approximately the same number of words per century as in the WWO collection. In the future, we plan
+								 to use more precise methods for creating parallel corpora, drawing on the markup to select
+								 texts with similar numbers of <code>&lt;l&gt;</code>, <code>&lt;p&gt;</code>, and <code>&lt;sp&gt;</code> 
+								elements, for example, to ensure a rough balance in genres between the texts in the two corpora.</p>
+								<!--<p>First, each document in the EEBO corpus is categorized by the century in which it was originally published: 17th century, 
 									18th century, or 19th century. Documents without a source publication date are passed over. Once the century has been 
 									identified, the document’s source author, publication date, and publication place are added to a tab-separated 
 								catalog.</p>
 								<p>Then, the document’s textual content (from <code>&lt;text&gt;</code>) is minimally regularized. Newlines and tabs are reduced to a 
-									single space. Word by word, with whitespace used as a delimiter, the long-s character (“ſ”) is regularized to “s”. <!-- I think this needs to be more separate statements? -->
+									single space. Word by word, with whitespace used as a delimiter, the long-s character (“ſ”) is regularized to “s”. <!-\- I think this needs to be more separate statements? -\->
 									Each word is added to the matching century subcorpus as well as the all-centuries EEBO subcorpus. At the same time, 
 								the Python script increments the total number of words gathered for the given century.</p>
 								<p>When a particular century has a total word-count that meets or exceeds the target word-count, no further documents 
@@ -176,7 +180,7 @@
 											<td>1</td>
 										</tr>
 									</tbody>
-								</table><!-- I'm not sure this table speaks for itself; it's a bit confusing, especially with the low amount for the 19thc and no heading. -->
+								</table><!-\- I'm not sure this table speaks for itself; it's a bit confusing, especially with the low amount for the 19thc and no heading. -\->-->
               </section>
 						  
 						  <section>
