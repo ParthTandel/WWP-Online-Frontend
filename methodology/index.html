@@ -127,6 +127,8 @@
 								<!-- Full list: ('castList', 'elision', 'figDesc', 'label', 'speaker') with an example -->
 							  <p>These tools can be found on GitHub at <a href="https://github.com/NEU-DSG/wwp-public-code-share/tree/master/fulltext" class="link link-external" 
 							    target="_blank">https://github.com/NEU-DSG/wwp-public-code-share/tree/master/fulltext</a>.</p>
+								<p>We have also included two models with some additional regularization, using the routines developed by the <a href="https://graphics.cs.wisc.edu/WP/vep/">Visualizing English Print</a> project: a version of the full WWO corpus and one including only the language attributable to WWO authors. Full details on the VEP project’s regularization routines are available in their <a href="https://github.com/uwgraphics/VEP-pipeline">GitHub repository</a> and <a href="https://graphics.cs.wisc.edu/WP/vep/workflow-2/#4_Spelling_Standardization">documentation</a>—we borrow their code with thanks and appreciation.</p>					
+			
 
 								<h3>Corpus Parsing</h3>
 								<p>The Women Writers Vector Toolkit (WWVT) provides various models for exploration and comparison. <!--We have 
@@ -142,6 +144,8 @@
 								<p>To create proxies for genre, we were able to leverage TEI encoding of document structures.
 									For example, the interface contains two models, one trained on a corpus with exclusively the contents of paragraphs (the TEI <code>&lt;p&gt;</code> element) and the other with the contents of line groups (the TEI <code>&lt;lg&gt;</code> element), enabling a 
 									basic comparison between prose and verse.</p>
+								<p>Another corpus drawn from WWO’s TEI markup is the “authorial” corpus, which includes only those textual contents written by WWO authors, and excludes tables of contents, indices, editorial prefaces and dedications, subscriber lists, and so on. This corpus was prepared using an XSLT stylesheet that is available in the WWP’s <a href="https://github.com/NEU-DSG/wwp-public-code-share/tree/master/fulltext" class="link link-external" 
+									target="_blank">GitHub repository</a>. </p>
 
 								<h3>TCP Corpora Preparation and Parsing</h3>
 								<p>The TCP corpora are designed as parallels to the WWO corpus, approximating the word-counts per century in Women 
