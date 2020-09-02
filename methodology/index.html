@@ -144,8 +144,12 @@
 								<p>To create proxies for genre, we were able to leverage TEI encoding of document structures.
 									For example, the interface contains two models, one trained on a corpus with exclusively the contents of paragraphs (the TEI <code>&lt;p&gt;</code> element) and the other with the contents of line groups (the TEI <code>&lt;lg&gt;</code> element), enabling a 
 									basic comparison between prose and verse.</p>
-								<p>Another corpus drawn from WWO’s TEI markup is the “authorial” corpus, which includes only those textual contents written by WWO authors, and excludes tables of contents, indices, editorial prefaces and dedications, subscriber lists, and so on. This corpus was prepared using an XSLT stylesheet that is available in the WWP’s <a href="https://github.com/NEU-DSG/wwp-public-code-share/tree/master/fulltext" class="link link-external" 
+								<p>Another corpus drawn from WWO’s TEI markup is the “authorial” corpus, which includes only those textual contents written by WWO authors, and excludes tables of contents, indices, editorial prefaces and dedications, subscriber lists, and so on. This corpus was prepared using an XSLT stylesheet developed by Ash Clark and Sarah Connell that is available in the WWP’s <a href="https://github.com/NEU-DSG/wwp-public-code-share/tree/master/fulltext" class="link link-external" 
 									target="_blank">GitHub repository</a>. </p>
+								<p>We also used TEI markup to create several corpora in which names of places and persons were tokenized by inserting underscores between words inside of <code>&lt;persName&gt;</code> and <code>&lt;placeName&gt;</code> elements and removing extraneous spaces and punctuation. These corpora were prepared using an XSLT stylesheet developed by Laura Johnson and Ash Clark that is available in the WWP’s <a href="https://github.com/NEU-DSG/wwp-public-code-share/tree/master/fulltext" class="link link-external" 
+									target="_blank">GitHub repository</a>.
+									
+								</p>
 
 								<h3>TCP Corpora Preparation and Parsing</h3>
 								<p>The TCP corpora are designed as parallels to the WWO corpus, approximating the word-counts per century in Women 
