@@ -56,14 +56,15 @@
     float: right;
 }
 
-.figcaption {
+.figcaption, figcaption {
     margin: 1em 0;
     font: italic smaller sans-serif;
     /*padding: 3px;*/
     text-align: center;
 }
 
-.figcaption .figcap-label {
+.figcaption .figcap-label,
+figcaption .figcap-label{
   font-style: normal;
 }
 
