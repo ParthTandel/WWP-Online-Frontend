@@ -1,0 +1,27 @@
+header > nav {
+  all: unset;
+}
+nav.navbar {
+  align-items: center;
+  background-color: #343a40;
+  border-radius: 0;
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  display: flex;
+}
+nav a {
+  color: rgba(255,255,255,.75);
+}
+nav a:hover {
+  color: #ccc;
+}
+.nav-item {
+  display: block;
+  margin-right: 1rem;
+}
+.nav-item-logo {
+  flex: 1 2;
+}
+.nav-item-logo a {
+  color: #fefefe;
+}
