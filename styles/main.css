@@ -164,7 +164,7 @@ body {
 
 .wwp-text {
   margin-top: 130px !important;
-  text-align: justify;
+  /*text-align: justify;*/
 }
 
 .button {
@@ -220,4 +220,18 @@ iframe {
 
 .card {
   border-color: gray;
+  margin-top: 2rem;
+}
+
+.card-link {
+  text-align: center;
+  font-size: 1.15em;
+}
+
+.allcaps {
+  text-transform: uppercase;
+}
+
+strong.allcaps:first-child {
+  margin-right: 0.25rem;
 }
