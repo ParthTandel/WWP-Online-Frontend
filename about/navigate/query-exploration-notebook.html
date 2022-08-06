@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="title" content="Page name"/>
+        <meta name="display" content="true"/>
+        <title>Page Name</title>
+        <!--#include virtual="../../../../../utils/includes/scripts.ssi"-->
+        <!--#include virtual="../../../../../utils/includes/styles.ssi"-->
+    </head>
+    <body>
+        <div class="frame">
+            
+            <!--#include virtual="../../../../../utils/includes/banner.ssi"-->
+            
+            <div class="main">
+                
+                <!--#include virtual="../../../../../utils/includes/area_navigation.ssi"-->
+                
+                <div class="content">
+                    <h1>Query Exploration Notebook</h1>
+                    <p>This document offers a structure you might use for keeping track of your
+                        preliminary results with the various query options as you explore your
+                        models. You can copy-paste relevant results into each section below, along
+                        with any initial notes on what seems significant or worth further
+                        exploration. If you are working with multiple models, make sure to keep
+                        track of which model you're using for any results you include! </p>
+                    <b>Contents</b>: 
+                        <p>Clusters</p>
+                        <p>“Closest to” Queries
+                        <p>Addition Queries</p>
+                        <p>Subtraction Queries</p>
+                        <p>Analogies
+                        
+                        </p>
+                            
+                    <h3>Clusters</h3><p>In this section, record any clusters that are of interest,
+                        as well as your notes on what you think they might be showing or notes on
+                        any terms the clusters suggest you might want to query. </p>
+                    <h3>“Closest to” Queries</h3><p>Use this space to record the results of queries
+                        for single terms. Make sure to include the term! What were the most
+                        significant neighbors (with the highest cosine similarity) and what was the
+                        cosine similarity? </p>
+                    <h3>Addition Queries</h3><p>Use this section to record the results for queries
+                        that use the addition function, which looks at the combined vectors for
+                        multiple terms (term 1 + term 2). </p>
+                    <h3>Subtraction Queries</h3><p>Use this space to record the results for queries
+                        that use the subtraction operation, which looks at the space between two
+                        terms—that is, the terms that are closest to one term when the contexts for
+                        the second term are subtracted (term 1 - term 2). </p>
+                    <h3>Analogies</h3><p>Use this section to record the results of queries for the
+                        analogy function, which subtracts the contexts associated with one word from
+                        another then adds a third term (term 1 - term 2 + term A). This will
+                        generate results that associate with the difference between the first two
+                        terms plus the contexts of the third term. </p>
+                </div>
+                
+            </div>
+            
+            <!--#include virtual="../../../../../utils/includes/footer.ssi"-->
+            
+        </div>
+    </body>
+</html>
