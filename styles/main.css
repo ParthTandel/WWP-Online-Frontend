@@ -237,3 +237,7 @@ strong.allcaps:first-child {
 }
 
 a{ color:#006ee5; }
+
+.navbar-dark .navbar-nav .nav-link {
+color: #a1a4a8;
+}
