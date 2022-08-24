@@ -263,4 +263,11 @@ footer nav.navbar {
 
 address {
   margin-bottom: 0.25rem;
+  flex: 0 0 33%;
+}
+
+@media (max-width: 575.98px) {
+  address {
+    flex-basis: auto;
+  }
 }
