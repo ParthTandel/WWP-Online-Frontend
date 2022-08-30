@@ -235,3 +235,39 @@ iframe {
 strong.allcaps:first-child {
   margin-right: 0.25rem;
 }
+
+a{ color:#006ee5; }
+
+.navbar-dark .navbar-nav .nav-link {
+color: #a1a4a8;
+}
+
+.navbar-dark address a {
+padding: 0.25rem 0;
+color: #a1a4a8;
+}
+
+.navbar-dark address a:hover {
+  color: rgba(255,255,255,.75);
+  text-decoration: none;
+}
+
+footer {
+  color: #e59a17;
+  font-size: 1rem;
+}
+
+footer nav.navbar {
+  padding: 0.5rem 2rem;
+}
+
+address {
+  margin-bottom: 0.25rem;
+  flex: 0 0 33%;
+}
+
+@media (max-width: 575.98px) {
+  address {
+    flex-basis: auto;
+  }
+}
