@@ -1,6 +1,5 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<title>Glossary | Women Writers Vector Toolkit</title>
 	<meta charset="utf-8" />
@@ -8,9 +7,8 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
 	<link rel="shortcut icon" href="/utils/gfx/favicon.ico" />
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
-	<link rel="stylesheet"
-	href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous"></link>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400italic,600&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css"/>
 	<link rel="stylesheet" href="../../styles/main.css"></link>
@@ -48,14 +46,17 @@
 								</div>
 							</li>
 							<li class="nav-item dropdown">
-								<a class="nav-link dropdown" data-toggle="dropdown" href="../../resources/index.html" id="resources" aria-haspopup="true" aria-expanded="false">
+								<a class="nav-link dropdown" data-toggle="dropdown" href="#" id="resources" aria-haspopup="true" aria-expanded="false">
 									Resources
 									<i class="fa fa-caret-down"></i>
 								</a>
-								<div class="dropdown-menu" aria-labelledby="resources">
-									<a class="dropdown-item" href="../../resources/glossary/index.html">Glossary</a>
+							  <div class="dropdown-menu" aria-labelledby="resources">
+							    <a class="dropdown-item" href="../introduction/index.html">Introduction</a>
+									<a class="dropdown-item" href="#">Glossary</a>
 									<a class="dropdown-item" href="../case-studies/index.html">Case Studies</a>
-									<a class="dropdown-item" href="../../resources/sources/index.html">Helpful Sources</a>
+							    <a class="dropdown-item" href="../sources/index.html">Helpful Sources</a>
+							    <a class="dropdown-item" href="../walkthroughs/index.html">Code Walkthroughs</a>
+							    <a class="dropdown-item" href="../downloads/index.html">Downloads</a>
 								</div>
 							</li>
 							<li class="nav-item dropdown">
@@ -75,7 +76,6 @@
 						</ul>
 					</div>
 					
-					
 				</div>
 			</div>
 		</nav>
@@ -86,48 +86,80 @@
 				<div class="row justify-content-center">
 					<div class="col">
 						<h1>Glossary</h1>
-						<p>This glossary is an alphabetized list of terms picked by the <a href="../../about/team/index.html">Women Writers Vector Toolkit
-						Pedagogy Team</a>. These terms have been chosen and defined with the intention of making the website accessible to multiple levels of expertises. </p>
+						<p>This glossary is a list of terms selected and defined with the intention of making word embedding models accessible to individuals with multiple levels of expertise. </p>
 						<dl>
 							<dt>Algorithm</dt>
-							<dd>The process or set of rules to problem-solve or make a calculation. Usually we input data, the algorithm works on this data in a particular way, and it outputs new data. In this case, we use different code to run algorithms to quantify our text in various ways. The input is the different models from the Women Writers Project and the output is the word vectors.</dd>
+							<dd>A process or set of rules used to solve a problem or make a calculation. An algorithm may be expressed in structured language such as a computer program, or described in a visualization such as a flowchart. Algorithms are particularly useful for repeatable tasks with multiple steps.</dd>
+							<dt>Clustering</dt>
+							<dd>In machine learning, clustering is a process of algorithmically discovering natural groupings in data.</dd>
 							<dt>Code</dt>
-							<dd>In the case of this project, code is the program instructions to run an algorithm to collect data.</dd>
-							<dt>Corpus/Corpora (plural)</dt>
-							<dd>The collection of data. In this case the collection of different texts and information about those texts and editorial choices. A corpus is usually analyzed or manipulated.</dd>
-							<dt>Data/Datum</dt>
-							<dd>Facts, statistics, or information collected for analysis. Data can come in all shapes and sizes and may look different across disciplines as well as among factions within disciplines.</dd>
-							<dt>Digital Humanities</dt>
-							<dd> This definition can be very basic or very complex. Some argue baseline definition of digital humanities is the field in which computational skills and tools are used in the humanities disciplines, for things like text analysis, mapping, presentations. Others argue digital humanities is a field for critiquing computational tools and better understanding the social, cultural, and political impacts of these tools.</dd>
+							<dd>An expression of one or more algorithms. Code is generally written to the standards of a particular programming language. When written in this way, code can be read and its instructions acted upon by computers.</dd>
+							<dt>Context word</dt>
+							<dd>During the model training process, the words that appear within the <strong>window</strong> around the <strong>target word</strong> (i.e. the words that are assessed as “related to” the target word).</dd>
+							<dt>Continuous bag-of-words model</dt> 
+							<dd>An approach to training a word embedding model in which the model tries to predict the <strong>target word</strong> from a set of <strong>context words</strong> that are present in a <strong>window</strong> surrounding the target word. The term “bag-of-words” refers to the fact that the order of words within the window is not significant: each window (X words on either side of the target word) is treated as a bag of words rather than a series. The order of words within the corpus as a whole (which affects which words are grouped within the window) is still significant.</dd>
+						
+							<dt>Corpus (Plural: Corpora)</dt>
+							<dd>A collection of textual data. A corpus is usually analyzed or manipulated in some fashion.</dd>
+							<dt>Cosine similarity</dt> 
+							<dd>In the context of word embedding models, the relationship between two words, expressed as the geometrical relationship between their respective vectors in the corpus vector space. If the cosine of the two word vectors is 1, the two words are identically positioned within the vector space. If the cosine is 0, the two words are as unrelated as possible within the vector space (negative cosine similarities do not occur in this analysis since the numbers that contribute to the computation are all positive).</dd> 
+							<dt>Data (Singular: Datum)</dt>
+							<dd>Facts, statistics, or information collected for analysis. Data can come in all shapes and sizes and may look different across disciplines as well as among groups within disciplines.</dd>
+							<!--<dt>Digital Humanities</dt>
+							<dd>This definition can be very basic or very complex. Some argue that the baseline definition of digital humanities is the field in which computational skills and tools are used in the humanities disciplines, for things like text analysis, mapping, presentations. Others argue digital humanities is a field for critiquing computational tools and better understanding the social, cultural, and political impacts of these tools.</dd> SC: I don't think that we need this and I think it's potentially distracting.-->
 							<dt>Documentation</dt>
-							<dd>A way of providing official information or evidence to use as a record to understand choices made; documentation is useful for accessibility, transparency, and archiving. In this case, we have documentation about how the code was created, the different choices behind each model of the corpus, and more.</dd>
+							<dd>A way of providing information about the choices made in a project; documentation is useful for accessibility, transparency, and archiving. On this site, we have documentation about how the code was implemented, how corpora were selected and prepared, and more.</dd>
+							
+							<dt>Embedding</dt> <dd>Broadly speaking, an embedding is a compressed vector representation of a corpus which renders the data more dense, resulting in both faster processing and also in more meaningful analytical outcomes. When representing a corpus with (for instance) a 1000-word vocabulary as a vector space, each word can be considered by itself as a vector with 1000 dimensions, 999 of which are zero. However, this kind of “sparse” vector space gives no information about connections between words, and it is also computationally unwieldy because of the large number of dimensions. (Think of a 1000-dimensional cube!) When we train an embedding model, we use the corpus itself (and the groupings of words that are observed via the <strong>window</strong>) to discover relationships between words: from this training process we get a model in which each word is a vector with a smaller number of dimensions representing the actual words in whose company it is most commonly found. (The term “embedding” describes the way in which the training process “flattens” the high-dimensional space; think about what would happen if a heavy weight landed on top of a paper cube and embedded its top layer in its bottom layer.) This model has fewer dimensions and is also much “denser” (less “sparse”) because none of the dimensions is zero (all represent actual word relationships). As a result, it is both easier to handle computationally, and also more information-rich, since it captures the results of all of the observations of the actual corpus.</dd>
+							<dt>Iteration</dt> <dd>Within the model training process, a single cycle through the process of examining each word and its context (see <strong>window</strong>) and adjusting its positioning in vector space. The model training process takes multiple iterations, and the more iterations, the more refined the model (but the more time required to produce it). The degree of that refinement depends on the size of the input corpus, with larger corpora requiring fewer iterations. The number of iterations is specified as a parameter during the model training process, and a reasonable starting point (as a sort of generic default) is 10. </dd>
+							<dt><em>k</em>-means clustering</dt> <dd>Generally speaking, “clustering” is a process of analysing a data set to discover clusters of related data points. Starting with a decision about how many clusters there are (this is a parameter that can be set by the researcher), the clustering algorithm tries to find the best fit within the data set: that is, the set of cluster boundaries that result in the minimum distance between data points within each cluster. (Intuitively, this is a bit like a human being looking at a map with dots representing human population, and identifying the likely locations of town centers.) k-means clustering uses an algorithm which seeks to identify a specified number (k) of “centroids”: that is, points that are the mathematical centers of clusters. It starts by randomly selecting a set of k points (think of these as being like “candidate centroids”), and then associates every data point within the set to the closest candidate centroid. Next, it calculates the actual centroid of each resulting cluster (resulting in the centroid moving a bit). Next, it reassigns each data point to the centroid that is now closest. These two steps are repeated, with the centroids’ positions and the data points that form their “clusters” being incrementally adjusted, until the process reaches equilibrium or until a specified maximum number of iterations is completed. In the context of word embedding models, k-means clustering can be used to identify clusters of related words within the model. </dd>
+							
 							<dt>Model</dt>
-							<dd>A representation or example of a concept or thing. In this case, we use “models” to refer to the different ways we are representing the Women Writer’s corpus through our choices in what information to extract.</dd>
-							<dt>Pedagogy</dt>
-							<dd>The method and practice of teaching something – particularly teaching with theories in particular academic subjects. In this case, we will be providing a pedagogical approach to using word vector analysis and textual analysis in the classroom.</dd>
-							<dt>Quantitative Method</dt>
-							<dd>A way of presenting and studying data through the representation of numbers or analyzing numbers.</dd>
+							<dd>A representation of a concept or thing. When created for analysis, models are distillations of available data. Models always contain less information when compared to the original versions—they reduce complexity in order to aid understanding. Because of this, models must be constructed carefully, so that loss is minimized in areas where the model needs to be representative. For this project, we used textual models (XML representations of actual books) to create word embedding models.</dd>
+							<dt>Natural language processing (NLP)</dt> <dd>A domain of computer science and related fields focused on processing and analyzing human (“natural” rather than machine) language. NLP includes things like machine translation of text from one language to another, parsing of language (to identify parts of speech and syntactic structures), identification of meaning and affect (as in sentiment analysis), and speech recognition.</dd>
+							
+							<!--<dt>Pedagogy</dt>
+							<dd>The method and practice of teaching something – particularly teaching with theories in particular academic subjects. In this case, we will be providing a pedagogical approach to using word vector analysis and textual analysis in the classroom.</dd>-->
+							<dt>Negative sampling</dt> <dd>Within the process of training a word embedding model, negative sampling is a technique for reducing the computational burden of the training process. During the training process, in principle each <strong>iteration</strong> could update the information about the position of each word in the model (making it progressively more and more accurate). However, because there are many thousands of words in the model, doing that update with every iteration is time-consuming and computationally costly. With negative sampling, instead of updating every word at each iteration, the training process updates only the words directly observed within the <strong>window</strong>, plus a random sampling of a specified number of the other words in the model. Recommended values (for how many other words to update) are 5 to 20 for smaller corpora and 2 to 5 for larger ones.</dd>
+				
+						  <dt>Programming language</dt>
+						  <dd>A strictly-defined set of syntactical rules, used when writing or executing code. The term “programming language” may also be used more broadly to describe a language’s “implementations,” or, programs which read, validate, compile, or execute code.</dd>
+				<!--			<dt>Quantitative Method</dt> <!-\- Do we need this? -\->
+							<dd>A way of presenting and studying data through the representation or analysis of numbers.</dd>-->
 							<dt>R</dt>
-							<dd>A programming language and environment used for statistical computing or graphics.</dd>
-							<dt>Regularization</dt>
-							<dd>A form of regression used to avoid overfitting data, or to reduce the complexity of the model.
-							Research Question: A question that drives a research project. Unlike a hypothesis, a research question is an actual question driven by research with a known or unknown answer. Hypotheses are statements about the relationship of things.</dd>
+							<dd>A programming language and environment used for statistical computing and graphics.</dd>
+							<dt>Skip-gram model (or continuous skip-gram model)</dt> <dd>An approach to training a word embedding model in which the training process tries to predict the <strong>context words</strong> that will appear within a <strong>window</strong> around a given <strong>target word</strong>. The term “skip-gram” (analogous to “n-gram”) refers to the fact that the training process considers the target word together with each of the context words in turn; each pair of words is a “skip-gram” in the sense that it skips over the intervening words within the window. (So for instance in the sentence “the quick brown fox jumps over the lazy dog”, the word pair “quick dog” is a skip-gram since it skips over “brown fox jumps over the lazy”.) The skip-gram approach gives different weights to words based on their distance from the target word, so unlike the <strong>continuous bag-of-words</strong> model, word order within the window is to some extent treated as significant.</dd>
+							
+							<!--<dt>Regularization</dt>
+							<dd>A form of regression used to avoid overfitting data, or to reduce the complexity of the model.</dd>-->
+					<!--	  <dt>Research Question</dt>
+						  <dd>A question that drives a research project. Unlike a hypothesis, a research question is an actual question driven by research with a known or unknown answer. Hypotheses are statements about the relationship of things.</dd>-->
+							<!--<dt>Schema</dt>-->
+							<dt>Target word</dt> <dd>During the model training process, the word around which the <strong>window</strong> is centered (and whose <strong>context words</strong> are assessed as part of the calculation of what words are related to one another).</dd>
 							<dt>TEI</dt>
-							<dd>TEI stands for <a href="http://www.tei-c.org/">Text Encoding Initiative</a> and is a collaborative XML schema that is used to standardize the digitization of texts. The TEI is a collective or consortium that sets a standard for ways of presenting a text digitally, chiefly in the humanities, social sciences, and linguistics. The WWP uses TEI to encode all their texts and this project uses the TEI-encoded data to create new models and run the word vector algorithm.</dd>
-							<dt>Text Base</dt>
-							<dd>A text base is similar to a database. Instead of being a group of facts or statistics, the information collected is a set of texts.</dd>
-							<dt>Text encoding</dt>
-							<dd>Using pieces of texts as a base to mark up or encode parts of it. The Women Writers Project use TEI standards and XML (eXtensible Markup Language) rules for text encoding.</dd>
-							<dt><a href="https://wwp.northeastern.edu/">Women Writers Project</a> (WWP)</dt>
-							<dd>A long-term research project aiming to bring texts by pre-Victorian women writers out of the archive and make them accessible to a wide audience of teachers, students, scholars, and the general reader.</dd>
-							<dt><a href="https://www.wwp.northeastern.edu/wwo/">Women Writers Online</a></dt> <dd>The texts and authors in the WWP text base available online for use.
-							Word Vectors/Embeddings: Word embeddings is the process in which texts are grouped together with numbers and then mapped onto a vector space (word vector). It produces a visual representation of these models and helps to quantify based on distributional properties.</dd>
+							<dd>Stands for “<a href="http://www.tei-c.org/" target="_blank">Text Encoding Initiative</a>.” TEI is a collaborative XML schema that is used to standardize the markup of textual documents. <!--The TEI Consortium sets a standard for ways of digitally modeling humanities and social science research materials.--> The Women Writers Project uses TEI to encode the texts in WWO and this project uses models trained on TEI-encoded files that have been selectively transformed into plain text.</dd>
+							<dt>Training</dt> <dd>In the context of word embedding models, training is the process by which we create a model of a text corpus: in other words, the process of analyzing the corpus to observe what words appear near each other, and turning those observations computationally into a mathematical model. The training process and the resulting model are controlled by several parameters that affect how those observations and computations are done: for instance, the level of word proximity that is taken into consideration (the <strong>window</strong>) and the number of observations (<strong>iterations</strong>) made during the training process.</dd>
+							<dt>Topic Modeling</dt><dd>Topic modeling is part of a class of text analysis methods that analyze “bags” or groups of words together—instead of counting them individually–in order to capture how the meaning of words is dependent upon the broader context in which they are used in natural language. Topic modeling is not the only method that does this– cluster analysis, latent semantic analysis, and other techniques have also been used to identify clustering within texts.</dd>
+							<dt>Vector</dt> <dd>In mathematics, a vector is a line connecting two points in space that has both directionality (i.e. it goes from point A to point B rather than the other way around) and extent (i.e. the two points are a specific distance apart). If you picture a dandelion head with the little silver seeds sticking out of it, or a person with their hair standing on end, each seed or hair could be represented by a distinct vector. (And their angular relationships could be represented by <strong>cosine similarity</strong>; see above.) In word embedding models, each word in the corpus could be imagined as the endpoint of a vector (a single dandelion seed at the end of its tiny stalk), with the other endpoint being the geometrical origin, the point where all dimensions are zero (akin to the center of the dandelion). While the dandelion exists in three-dimensional space, a model's vector space has hundreds of dimensions. The specific vector for a given word is calculated based on the words that tend to appear near it (see <strong>negative sampling, continuous bag-of-words, and skip-gram</strong> above). (What counts as “nearness” is controlled by the size of the window we set when we train the model; see <strong>window</strong> below.) Each iteration of the training process adds information to the calculation of each word’s location in vector space, by re-examining the relative position of words in the corpus.</dd>
+							<dt>Window</dt> <dd>A span of text on either side of a given <strong>target word</strong> that determines how many <strong>context words</strong> are taken into consideration when identifying words as being “near to one another” or “related” or “used together.” The window’s length is specified as a parameter during the model training process. The size of the window affects the kinds of similarities between words that are brought to visibility: a larger window will tend to emphasize topical similarities, whereas a smaller window will tend to emphasize functional and syntactic similarities. The appropriate size of the window will vary depending on the form and length of the texts in the corpus, as well as the questions the researcher is trying to answer. Window sizes between 5 and 10 will work as a starting point for many projects.</dd>
+							<!--<dt>Textbase</dt>
+							<dd><!-\-A textbase is similar to a database.-\->A collection of textual documents which may have use as data.</dd>-->
+						<!--	<dt>Text encoding</dt>
+							<dd>Using pieces of texts as a base to mark up or encode parts of it. The Women Writers Project use TEI standards and XML (eXtensible Markup Language) rules for text encoding.</dd>-->
+						<!--	<dt><a href="https://wwp.northeastern.edu/">Women Writers Project</a> (WWP)</dt>
+							<dd>A long-term research project aiming to bring texts by pre-Victorian women writers out of the archive and make them accessible to a wide audience of teachers, students, scholars, and the general reader.</dd>-->
+							<dt>Word embedding models</dt> <!-- Needs to be fixed -->
+						  <dd>Word embedding models are a technique from the fields of machine-learning and natural language processing
+						  	in which the words in large textual datasets are represented numerically and mapped to vectors. Essentially,
+						  	word embedding models allow for a spatial understanding of the words in a corpus, such that one can calculate
+						  	the proximity of particular words (closer words are those used in more similar contexts) as well as their
+						  	positioning along paths, or vectors (words on the same vector are those with similar relationships between each other). </dd>
 							<dt>XML</dt>
-							<dd>XML stands for eXtensible Markup Language. It is a customizable schema-based language  used to digital information, particularly texts. There are a set of rules to customize XML to your particular dataset that allow for encoding the text so it can be human-readable and computer-readable.</dd>
+							<dd>Stands for “eXtensible Markup Language.” Like HTML, XML uses tags<!-- define tags? --> to layer meaning and hierarchical relationships onto text. Unlike HTML, XML has no defined tag names, and is in fact customizable. Anyone can define their own flavor of XML; the only constraint is that XML documents must be well-formed (that is, a document has only one outermost tag, and all tags are closed). TEI is one such flavor of XML, as is XSLT.</dd>
 							<dt>XQuery</dt>
-							<dd>A query and functional program that transforms data, usually in XML or similar formats, for other data formats.</dd>
+							<dd>A programming language used to obtain and manipulate data from XML. XQuery shares many of the features of XSLT, but XQuery code is not written in XML.</dd>
 							<dt>XSLT</dt>
-							<dd>XSLT stands for eXtensible Stylesheet Language Transformation. It programming language to transform XML documents into other kinds of documents, like HTML, plain text, or even another XML file.</dd>
+							<dd>Stands for “eXtensible Stylesheet Language Transformation.” XSLT is a programming language used to transform XML documents into other kinds of documents, such as HTML, plain text, or even another XML file. XSLT code is expressed through XML.</dd>
 						</dl>
 					</div>
 				</div>

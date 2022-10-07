@@ -1,21 +1,20 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<title>Methodology | Women Writers Vector Toolkit</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+	<link rel="shortcut icon" href="/utils/gfx/favicon.ico" />
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 	<link rel="stylesheet" href="../styles/main.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400italic,600&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 	<header>
-
 		<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
 			<div class="container">
 				<div class="d-inline-flex">
@@ -43,14 +42,17 @@
 								</div>
 							</li>
 							<li class="nav-item dropdown">
-								<a class="nav-link dropdown" data-toggle="dropdown" href="../resources/index.html" id="resource" aria-haspopup="true" aria-expanded="false">
+								<a class="nav-link dropdown" data-toggle="dropdown" href="../resources/glossary/index.html" id="resource" aria-haspopup="true" aria-expanded="false">
 									Resources
 									<i class="fa fa-caret-down"></i>
 								</a>
-								<div class="dropdown-menu" aria-labelledby="resource">
+							  <div class="dropdown-menu" aria-labelledby="resource">
+							    <a class="dropdown-item" href="../resources/introduction/index.html">Introduction</a>
 									<a class="dropdown-item" href="../resources/glossary/index.html">Glossary</a>
 									<a class="dropdown-item" href="../resources/case-studies/index.html">Case Studies</a>
-									<a class="dropdown-item" href="../resources/sources/index.html">Helpful Sources</a>
+							    <a class="dropdown-item" href="../resources/sources/index.html">Helpful Sources</a>
+							    <a class="dropdown-item" href="../resources/walkthroughs/index.html">Code Walkthroughs</a>
+							    <a class="dropdown-item" href="../resources/downloads/index.html">Downloads</a>
 								</div>
 							</li>
 							<li class="nav-item dropdown">
@@ -78,120 +80,124 @@
 			<div class="container">
 				<div class="row justify-content-center">
 					<div class="col">
+					  
+					  <h1>Methodology</h1>
+    
+						  <section>
+  					    <h2>The Word Vector Interface</h2>
+     						<p><a href="https://github.com/NEU-DSG/word-vector-interface" class="link link-external" target="_blank">Code for the Word Vector Interface</a> can be found on GitHub. 
+     							The Interface itself is an <a href="https://shiny.rstudio.com" class="link link-external" target="_blank">RStudio 
+     							Shiny</a> application developed by Jonathan D. Fitzgerald and Parth Tandel. It uses Benjamin Schmidt’s R package 
+     							<a href="https://github.com/bmschmidt/wordVectors" class="link link-external" target="_blank">wordVectors</a> (which itself includes a version of Tomas Mikolov’s original <a href="https://github.com/tmikolov/word2vec" target="_blank">code for word2vec</a>)
+     						  to train and query word embedding models.</p>
+     						<p>The GitHub repository includes the models used in the Word Vector Interface, as well as a JSON catalog 
+     						  containing descriptions of those models.</p>
+						  </section>
 
-						<article>    <section>  <h2>The Word Vector Interface</h2>
-							<p>Code for the Word Vector Interface can be found on GitHub at 
-								<a href="https://github.com/NEU-DSG/wwp-w2vonline" target="_blank">https://github.com/NEU-DSG/wwp-w2vonline</a>. 
-								The Interface itself is an <a href="https://shiny.rstudio.com" class="link link-external" target="_blank">RStudio 
-								Shiny</a> application developed by Jonathan D. Fitzgerald and Parth Tandel. It uses Benjamin Schmidt’s R package 
-								<a href="https://github.com/bmschmidt/wordVectors" class="link link-external" target="_blank">wordVectors</a> 
-							to create and query models of words.</p>
-							<p>The GitHub repository includes copies of the models, as well as a JSON catalog of those models and instructions
-							for running the application yourself.</p></section>
-
-							<section> <h2>Corpora</h2>
-								<p>The <a href="https://wwp.northeastern.edu/wwo/texts" target="_blank">Women Writers Online (WWO) corpus</a> 
-									represents works published between 1400 and 1850 which were authored, translated, or compiled by women. The 
-									corpus is available online to subscribing institutions or individuals. The XML files are freely 
+							<section>
+							  <h2>Corpora</h2>
+							  <p>The Word Vector Interface is powered by three collections of documents from three different projects. 
+								  Each corpus was transcribed and encoded in XML, following the guidelines of the 
+									<a href="https://www.tei-c.org/" class="link link-external" target="_blank">Text Encoding Initiative (TEI)</a>. 
+							    By using texts marked up in TEI, we were able to make nuanced choices about the textual features used to generate 
+							    the files on which we trained the word embedding models.
+								  <!--For this project, the XML files were gathered and then transformed into normalized plain text using 
+									<a href="https://github.com/NEU-DSG/wwp-public-code-share/tree/main/fulltext" 
+									class="link link-external" target="_blank">XSLT and XQuery scripts</a> (described in  below).--></p>
+								<p>The Women Writers Project’s <a href="https://wwp.northeastern.edu/wwo/texts" target="_blank">Women Writers Online</a>
+								  (WWO) corpus collects works which were authored, translated, or compiled by women, published between 1526 and 1850. The 
+								  corpus is available online to subscribing institutions or individuals (find <a href="https://wwp.northeastern.edu/wwo/license/">information on one-month free trials</a> on the WWP website). The XML files are freely 
 									available on request. For consideration, send an email with a brief description of your research to 
 									<a href="mailto:wwp@&#x006E;ortheastern&#x002E;&#x0065;&#x0064;&#x0075;">wwp@&#x006E;ortheastern&#x002E;&#x0065;&#x0064;&#x0075;</a>.</p>
-									<p>The Interface also includes documents from 
-										<a href="https://eebo.chadwyck.com/home" target="_blank">Early English Books Online</a> (EEBO). The EEBO corpus 
-										is designed as a parallel corpus to the WWP. We randomly selected texts from EEBO and then pulled the same number 
-									of words from each century. The EEBO corpus approximately mirrors the combined WWP-century corpora. </p>
-									<p>Each corpus was transcribed and encoded in XML, following the 
-										<a href="https://www.tei-c.org/" class="link link-external" target="_blank">Text Encoding Initiative (TEI)</a> 
-										guidelines. For this project, the XML files were then transformed into normalized plain text using 
-										<a href="https://github.com/NEU-DSG/wwp-public-code-share/tree/master/fulltext" 
-										class="link link-external" target="_blank">XSLT and XQuery scripts</a> (described below).</p>
+								<p>The Interface also includes models trained on texts from the <a href="https://webapp1.dlib.indiana.edu/vwwp/welcome.do;jsessionid=D4020148F707FB298ED2B48F992EDFDC">Victorian Women Writers Project</a> (VWWP), as well as the 
+									<a href="https://quod.lib.umich.edu/e/eebogroup/" class="link link-external" target="_blank">Early English Books Online</a> 
+									(EEBO), <a href="https://quod.lib.umich.edu/e/ecco/" target="_blank">Eighteenth-Century Collections Online</a> (ECCO), and <a href="https://quod.lib.umich.edu/e/evans/" target="_blank">Evans Early American Imprint</a> TEI texts published by the <a href="https://www.textcreationpartnership.org/" target="_blank">Text Creation Partnership</a> (TCP). From the vast TCP corpus, we selected sub-corpora which roughly mirror the WWO corpus
+								  in number of words per century. The VWWP began at Indiana University in 1995 and is concerned with the exposure of lesser-known British women writers of the 19th century. The collection contains a range of genres, including: poetry, novels, children’s books, political pamphlets, religious tracts, and histories.</p>
+							 
+								
 
-										<h3>Corpus Preparation</h3>
-										<p>We transformed the WWO corpus to improve the results of word2vec with XSLT and XQuery. XSLT and XQuery are 
-											native programming languages for Extensible Markup Language (XML). XSLT (Extensible Stylesheet Language 
-											Transformation) allows us to make programmatic changes to the XML structure of the WWO corpus. XQuery is designed
-											for retrieving and interpreting information. Together, these languages move through the XML tree structures of WWO
-										files and alter the encoding of pre-specified elements.</p>
-										<p>For instance, textual instances of abbreviations are expanded within our XML elements.</p>
-										<!-- Snapshot example of XML/TEI and transformed text -->
-										<p>In addition to transforming the styling of some elements, we also remove elements that skew word embedding results. 
-											XQuery removes TEI metadata and data from the file that we produced while marking up the text. It also allows us to 
-										extract specific sections of the document using XPath.</p></section>
-										<!-- Full list: ('castList', 'elision', 'figDesc', 'label', 'speaker') with an example -->
+								<h3>Corpus Preparation</h3>
+							  <p>In order to get plain text out of the WWO XML, we transformed the corpus using a suite of tools written in
+							    XSLT and XQuery, native programming languages for XML documents. The XSLT stylesheet uses TEI encoding to make nuanced choices about 
+							    significant textual content. For example, abbreviations are expanded and errors are corrected
+							  	within our text outputs, based on the encoding with <code>&lt;abbr&gt;</code> and <code>&lt;expan&gt;</code>, and with <code>&lt;sic&gt;</code> and <code>&lt;corr&gt;</code> elements.</p>
+								<!-- Snapshot example of XML/TEI and transformed text -->
+								<p>In addition to transforming the output based on particular elements, we use XQuery scripts to remove elements that skew results 
+								  with word embedding models, such as speaker labels in drama. Modern writing, such as metadata and text written by WWP encoders and staff, 
+								  are also removed. The XQuery scripts also allow us to construct sub-corpora by extracting specified sections of XML documents using XPath.</p>
+								<!-- Full list: ('castList', 'elision', 'figDesc', 'label', 'speaker') with an example -->
+							  <p>These tools can be found in the <a href="https://github.com/NEU-DSG/wwp-public-code-share/tree/main/fulltext" class="link link-external" 
+  target="_blank">WWP Public Code Share</a> on GitHub.</p>
+								<p>We have also included two models with some additional regularization, using the routines developed by the <a class="link link-external" href="https://graphics.cs.wisc.edu/WP/vep/" target="_blank">Visualizing English Print</a> project: a version of the full WWO corpus and one including only the language attributable to WWO authors. Full details on the VEP project’s regularization routines are available in the <a class="link link-external" href="https://github.com/uwgraphics/VEP-pipeline" target="_blank">VEP-Pipeline GitHub repository</a> and <a class="link link-external" href="https://graphics.cs.wisc.edu/WP/vep/workflow-2/#4_Spelling_Standardization" target="_blank">documentation</a>—we borrow their code with thanks and appreciation.</p>					
+			
 
+								<h3>Corpus Parsing</h3>
+								<p>The Women Writers Vector Toolkit (WWVT) provides various models for exploration and comparison. <!--We have 
+									segmented the WWO corpus into different subsets to create different models. -->In addition to two models that include 
+									every file in the WWO (one including front and back matter and one with exclusively the main body of each text), the interface also 
+									offers the option to compare models by publication date and by genre.</p>
+								<p>The WWO corpus spans more than three centuries and includes information on the date of each text’s first edition, making the corpus 
+								  ideal for exploring changes in word usage over time. Publication dates are used to sort and combine documents by their century of publication, 
+									with each sub-corpus containing all the documents published in a single century, except for the 16th and 17th centuries, which are combined. 
+									The 16th and 17th centuries together provide enough words for a more accurate model and
+									are approximately the same size as the 18th- and 19th-century models. These models can be used for 
+								diachronic studies of literary and cultural change.</p>
+								<p>To create proxies for genre, we were able to leverage TEI encoding of document structures.
+									For example, the interface contains two models, one trained on a corpus with exclusively the contents of paragraphs (the TEI <code>&lt;p&gt;</code> element) and the other with the contents of line groups (the TEI <code>&lt;lg&gt;</code> element), enabling a 
+									basic comparison between prose and verse.</p>
+								<p>Another corpus drawn from WWO’s TEI markup is the “authorial” corpus, which includes only those textual contents written by WWO authors, and excludes tables of contents, indices, editorial prefaces and dedications, subscriber lists, and so on. This corpus was prepared using the “<a href="https://github.com/NEU-DSG/wwp-public-code-share/tree/main/fulltext" class="link link-external" 
+									target="_blank">FulltextBot</a>,” an XSLT stylesheet developed by Ash Clark and Sarah Connell that is available in the WWP’s GitHub repository. </p>
+							  <p>We also used TEI markup to create several corpora in which names of places and persons were tokenized by inserting underscores between words inside of <code>&lt;persName&gt;</code> and <code>&lt;placeName&gt;</code> elements and removing extraneous spaces and punctuation. These corpora were prepared using the “<a href="https://github.com/NEU-DSG/wwp-public-code-share/blob/main/fulltext/Element-Tokenizer-README.md" class="link link-external" 
+									target="_blank">Element Tokenizer</a>,” an XSLT stylesheet developed by Juniper Johnson and Ash Clark that is available in the WWP’s GitHub repository.
+								</p>
 
-										<h3>Corpus Parsing</h3>
-										<p>The Women Writers Vector Toolkit (WWVT) provides various models for literary exploration and comparison. We have 
-											segmented the WWO corpus into different subsets to create different models. In addition to two models that include 
-											every file in the WWO (one with front and back matter and one with only the body content), models are separated 
-										into three categories: centuries, publication place, and specific elements.</p>
-										<p>The WWO corpus spans more than three centuries from 1526 to 1850. Every file in the corpus contains a canonical 
-											date of the text’s first edition. These dates are used to sort and combine plain text files into a single text file 
-											with each file containing all documents from a single century, except for the 16th century, which has been merged 
-											with the 17th century text file. The 16th and 17th centuries together provide enough words for an accurate model and
-											are approximately the same size as the 18th- and 19th-century models. These files, once modeled, can be used for 
-										diachronic studies of literary and cultural change.</p>
-										<p>Similarly, the WWO records the place of publication for each file. This information is leveraged in the same way as 
-											dates to create single plain text files of documents published inside and outside the United States. These models 
-										can be useful for exploring possible language variations across space and cultures.</p>
-										<p>Lastly, the WWO allows for word usage across writing styles. Elements representing prose (paragraphs: &lt;p&gt;) and 
-											verse (line groups: &lt;lg&gt;) allow the corpus to be crudely partitioned along genre. These models highlight how 
-										context inflects word meaning and usage.</p>
-
-										<h4>EEBO Corpora Preparation and Parsing</h4>
-										<p>The EEBO corpus is designed as a parallel corpus to the WWP, approximating the word-count per century in Women 
-										Writers Online. To collect texts from EEBO, a Python script follows this process:</p>
-										<p>Each document in the EEBO corpus is categorized by the century in which it was originally published: 17th century, 
-											18th century, or 19th century. Documents without a source publication date are passed over. Once the century has been 
-											identified, the document’s source author, publication date, and publication place are added to a tab-separated 
-										catalog.</p>
-										<p>The document’s textual content (from &lt;text&gt;) is minimally regularized. Newlines and tabs are reduced to a 
-											single space. Word by word, with whitespace used as a delimiter, the long-s character (“ſ”) is regularized to “s”. 
-											Each word is added to the matching century subcorpus as well as the all-centuries EEBO subcorpus. At the same time, 
-										the Python script increments the total number of words gathered for the given century.</p>
-										<p>When a particular century has a total word-count that meets or exceeds the target word-count, no further documents 
-										from that century will be added to the subcorpora or the catalog.</p>
-										<table align="center">
-											<thead>
-												<tr>
-													<th>Century</th>
-													<th>Maximum words</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td>17th</td>
-													<td>4000000</td>
-												</tr>
-												<tr>
-													<td>18th</td>
-													<td>4000000</td>
-												</tr>
-												<tr>
-													<td>19th</td>
-													<td>1</td>
-												</tr>
-											</tbody>
-										</table>
-
-
-										<h3>Model Testing</h3>
-										<p>Once the plain text of each file has been cleaned, normalized, sorted, and combined, the resulting text files can be 
-											fed into word2vec to be modeled. We tested the parameters of various word embedding models to choose the best fit for 
-											our data. Using 27 pairs of words and determining their cosine similarities, we found that we obtained the best results 
-											from a model created with a window size of 6 words, 100 vectors, 10 iterations, and negative sampling set at 15. Models 
-										produced from the smallest datasets varied slightly with a negative sampling set at 5.</p>
-										<p>With the model parameters in place, we then tested our three processes for regularization: XSLT and XQuery alone, 
-											Northwestern University’s Morphadorner, and Morphadorner tuned to be sensitive to Early Modern English vocabularies and 
-											spelling practices. We again used the 27 word-pairings and found that the XSLT and XQuery alone produced the best 
-										results by a slight amount.</p></section></article>
-
-
-
-									</div>
-								</div>
-							</div>
-						</div>
+								<h3>TCP Corpora Preparation and Parsing</h3>
+								<p>The TCP corpora are designed as parallels to the WWO corpus, approximating the word-counts per century in Women 
+								Writers Online. To collect texts from the TCP files, we used a Python script which counts the words in the plain-text 
+								versions of each text and then uses publication date metadata to select a subset of texts from the 
+								TCP collection with approximately the same number of words per century as in the WWO collection. In the future, we plan
+								 to use more precise methods for creating parallel corpora, drawing on the markup to select
+								 texts with similar numbers of <code>&lt;l&gt;</code>, <code>&lt;p&gt;</code>, and <code>&lt;sp&gt;</code> 
+								elements, for example, to ensure a rough balance in genres between the texts in the two corpora.</p>
+								<!--<p>First, each document in the EEBO corpus is categorized by the century in which it was originally published: 17th century, 
+									18th century, or 19th century. Documents without a source publication date are passed over. Once the century has been 
+									identified, the document’s source author, publication date, and publication place are added to a tab-separated 
+								catalog.</p>
+								<p>Then, the document’s textual content (from <code>&lt;text&gt;</code>) is minimally regularized. Newlines and tabs are reduced to a 
+									single space. Word by word, with whitespace used as a delimiter, the long-s character (“ſ”) is regularized to “s”. <!-\- I think this needs to be more separate statements? -\->
+									Each word is added to the matching century subcorpus as well as the all-centuries EEBO subcorpus. At the same time, 
+								the Python script increments the total number of words gathered for the given century.</p>
+								<p>When a particular century has a total word-count that meets or exceeds the target word-count, no further documents 
+								from that century will be added to the subcorpora or the catalog.</p>-->
+              </section>
+						  
+						  <section>
+								<h2>Model Testing</h2>
+								<p>Once the plain text of each file has been cleaned, normalized, sorted, and combined, the resulting text files can be used to train models with word2vec. To choose the best-fitting parameters for 
+									our data, we compared models’ cosine similarities of word pairs that, based on our knowledge of these corpora, we expect to have high degrees of similarity (such as: “before” and “after”; “father” and “mother”; “king” and “prince”; and “holy” and “sacred”). We found that we obtained the best results 
+									from a model created with a window size of 6 words, 100 vectors, 10 iterations, and negative sampling set at 15. Models 
+								produced from the smallest datasets varied slightly with an optimal negative sampling at 5.</p>
+								<p>With the model parameters in place, we then tested our three regularization processes: XSLT and XQuery alone; 
+								  Northwestern University’s <a href="http://morphadorner.northwestern.edu/morphadorner/" class="link link-external" target="_blank">MorphAdorner</a>; 
+								  and MorphAdorner tuned to be sensitive to Early Modern English vocabularies and 
+									spelling practices. We again tested models with word pairings and found that the XSLT and XQuery alone produced the best 
+								results. In the future, we plan to test other methods for text regularization, and add models that have been
+								trained on the same corpora, but with different regularization processes, to allow for comparison. We will also
+								add more robust methods for validation, updating our models based on the results of that validation, and publishing 
+								our validation routines, along with the code used to train the models, in this space.</p>
+							</section>
+						  
+						  <section>
+						    <h2>Downloads</h2>
+						    <p>For links to view and download the routines and code for this project, see our <a href="../resources/downloads/index.html">Downloads page</a>.</p>
+						  </section>
+						
+						
 					</div>
-					<script type="text/javascript" src="../scripts/mobile-dropdown.js" ></script>
-				</body>
-				</html>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="../scripts/mobile-dropdown.js" ></script>
+</body>
+</html>
