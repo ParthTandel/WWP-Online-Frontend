@@ -1,5 +1,5 @@
 jQuery(function($) {
-    if($(window).width()>769){
+    if( $(window).width() > 769 ){
         $('.navbar .dropdown').hover(function(e) {
           console.log(e);
             /*$(this).find('.dropdown-menu').first().stop(true, true).delay(250).slideDown();*/
