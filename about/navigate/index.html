@@ -24,7 +24,7 @@
 					<img src="../../assets/logo.png" width="61" height="52" class="d-inline-block align-top" alt="">
 					<a href="../../index.html" id="wwvt-home">Women Writers Vector Toolkit</a>
 				</div>
-				<div>
+				<div class="navbar-group">
 					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
 						<span class="navbar-toggler-icon"></span>
 					</button>
@@ -34,20 +34,20 @@
 								<a class="nav-link" href="http://lab.wwp.northeastern.edu/wwvt/">Word Vector Interface</a>
 							</li>
 							<li class="nav-item dropdown">
-								<a class="nav-link dropdown" data-toggle="dropdown" href="../about-wwvt/index.html" id="about" aria-haspopup="true" aria-expanded="false">
+								<a class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" href="#" id="about" aria-haspopup="true" aria-expanded="false">
 									About
-									<i class="fa fa-caret-down"></i>
+									
 								</a>
 								<div class="dropdown-menu" aria-labelledby="about">
 									<a class="dropdown-item" href="../about-wwvt/index.html">About the WWVT</a>
-									<a class="dropdown-item" href="./index.html">How to Navigate</a>
+									<a class="dropdown-item" href="../about-wwvt/toolkit-guide.html">How to Navigate the Toolkit</a>
+									<a class="dropdown-item" href="./index.html">How to Navigate the Shiny App</a>
 									<a class="dropdown-item" href="../team/index.html">Team</a>
 								</div>
 							</li>
 							<li class="nav-item dropdown">
-								<a class="nav-link dropdown" data-toggle="dropdown" href="../../resources/glossary/index.html" id="resources" aria-haspopup="true" aria-expanded="false">
+								<a class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" href="#" id="resources" aria-haspopup="true" aria-expanded="false">
 									Resources
-									<i class="fa fa-caret-down"></i>
 								</a>
 							  <div class="dropdown-menu" aria-labelledby="resources">
 							    <a class="dropdown-item" href="../../resources/introduction/index.html">Introduction</a>
@@ -60,9 +60,8 @@
 							</li>
 							<li class="nav-item dropdown">
 								<div class="btn-group">
-									<a class="nav-link dropdown" data-toggle="dropdown"  href="../../teaching-exploration/index.html"  id="teaching" aria-haspopup="true" aria-expanded="false">
+									<a class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" href="#" id="teaching" aria-haspopup="true" aria-expanded="false">
 										Teaching Guide
-										<i class="fa fa-caret-down"></i>
 									</a>
 									<div class="dropdown-menu" aria-labelledby="teaching">
 										<a class="dropdown-item" href="../../teaching-exploration/index.html">Teaching with this Tool</a>
@@ -88,78 +87,78 @@
 				<div class="container">
 					
 					<section>
-					  <h1>Navigating the Toolkit</h1>
-					  <p>We imagine this space as one designed to foster curiosity and exploration. Because this project is built upon accessibility and transparency for users with multiple levels of text analysis experience, the Women Writers Vector Toolkit:</p>
-						<ul>
-							<li>provides the <a href="http://lab.wwp.northeastern.edu/wwvt/">Word Vector Interface</a> for researchers,
-							instructors, and learners to explore;</li>
-							<li>shows our processes for transforming and regularizing TEI data by publishing a detailed <a
-								href="../../methodology/index.html">methodology</a>;</li> 
-								<li>demonstrates teaching implementations by providing <a href="../../teaching-exploration/assignments/index.html">sample assignments</a>
-								and <a href="query_experimentation_suggestions.html">suggested searches</a>;</li> 
-								<li>shares resources that include an <a
-									href="../../resources/sources/index.html">annotated readings list</a> and a <a
-									href="../../resources/glossary/index.html">glossary</a>; and</li>
-								<li>publishes <a href="../../resources/case-studies/index.html">case studies</a> that demonstrate some research and exploration possibilities for word embedding models.</li> 
-							</ul>
-					<p>See our <a href="site_map.html">site map</a> for an outline of the webpages within the WWVT.</p>
-					<h2><a href="http://lab.wwp.northeastern.edu/wwvt/">Word Vector Interface</a></h2>
-						<p>This interface will allow you to query terms in word2vec models that were trained on texts from <a href="https://wwp.northeastern.edu/wwo/">Women Writers Online</a>, the <a href="https://webapp1.dlib.indiana.edu/vwwp/welcome.do;jsessionid=BC5C725B7ACDCB9D253E08D05389F443">Victorian Women Writers Project</a>, and <a href="https://quod.lib.umich.edu/e/eebogroup/">Early English Books Online</a>. The main page of the interface allows you to query words in these different models to see which are “closest” in vector space—that is, which words are likeliest to be used in similar contexts. The interface also has a “Clusters” tab for exploring  neighboring words in vector space—words that are used in similar contexts will be clustered together. The “operations” tab allows you to do “vector math,” such as adding or subtracting the contexts of words; this tab also offers the ability to construct analogies. The “visualizations” tab allows you to create a word cloud or a scatterplot for the query term you would like to analyze. These visualizations display the query term and the other words that appear around that term.</p>
-                    
-                    			<h2><a href="../../resources/introduction/index.html">Resources</a></h2>
-                    			<p>Under the Resources tab, you can find an <a href="../../resources/introduction/index.html">introduction page</a> that discusses core concepts, provides a brief background on the development of word embeddings, and explains the specific implementation of word embedding models for the Women Writers Vector Toolkit (WWVT). However, this introduction is not exhaustive. For more information about any of the topics covered, please visit our <a href="../../resources/sources/index.html">annotated readings list</a>. Additionally, there is a <a href="../../resources/glossary/index.html">glossary</a> of key terminology under the same tab. To explore the example research for word embedding models, you can read several <a href="../../resources/case-studies/index.html">case studies</a> using the Word Vector Interface. If you would like to train a model of your own, there are <a href="../../resources/walkthroughs/index.html">code walkthrough notebooks</a>. These notebooks provide code and instructions for training and querying models using the wordVectors R package. Some of the notebooks are designed for RStudio Server, others for RStudio Desktop, and some can be used with either.</p>
-                    
-                    			<h2><a href="../../teaching-exploration/index.html">Teaching Implementations</a></h2>
-                    			<p>One of the goals for the Women Writers Vector Toolkit is to increase classroom access to conducting vector analyses on early women’s texts. We offer other tools and materials to help instructors use machine learning methods more effectively in their teaching. In the teaching exploration sections, you’ll find a <a href="../../teaching-exploration/assignments/index.html">database of assignments</a> created for the WWVT. The assignments have been written for different levels of familiarity with the corpus, the exploration interface, and word vector modeling more generally. This section includes a variety of classroom-based activities and take-home assignments.</p>
-                    
-                    			<h2><a href="../../methodology/index.html">Methodology</a></h2>
-                    			<p>To learn more about how the team created the models used in the Word Vector Interface, visit the Methodologies section on the Toolkit site. Also, this section describes the processes needed to prepare text corpora for model training.</p>
-                    
+					  <h1>Navigating the Shiny App</h1>
+						<p>
+							As part of the Women Writers Vector Toolkit, the Word Vector Interface serves as a space for researchers, instructors, and students to explore text analysis with word vectors through a set of pre-trained models. Some of the models include those trained using the Women Writers Online collection, the Victorian Women Writers Project collection, Early English Books Online, and selected sub-collections based on genre or time period. 
+						</p>
+						<p>
+							The interface is designed to be usable with no knowledge of code required. The interface allows you to explore different facets of word vectors—from clustering to comparison to visualization. For all levels of experience with word vectors, the interface is an excellent starting point for those who are interested in learning more about what kinds of analysis are possible through word vectors and word embedding models. The Women Writers Project also offers an <a href="../../resources/introduction/index.html">introduction</a> to word embedding models available for those interested in more in-depth introductory material.	
+						</p>
+						<p>
+							With the toolbar on the left side of the screen, you can select the model you are interested in and adjust the settings for the type of analysis you have selected. The results of your analysis will appear to the right of the toolbar, in the main window of the interface. This window offers a series of five tabs, each of which facilitates a particular form of analysis. You can begin by selecting a model of interest, navigating to the relevant tab, and then adjusting any relevant settings in the toolbar that are specific to the analysis offered through that tab. 	
+						</p>
+						<p>
+							Below, you will find a description of each tab as well as information on how to use each form of analysis.
+						</p>
+					</section>
 					
-						</section>
+					<section>
+						<h2>Home</h2>
+						<p>The “Home” tab allows you to search for a specific word in the model that you have selected in the toolbar and display the words which are closest to your search word in vector space. </p>
+						<p>The window displays the model that is currently selected (the default is the WWO Full Corpus) and offers a brief description of the corpus that the model was trained on. You can use the dropdown on the left to choose from the available models. </p>
+						<p>In order to search for a word of interest—or in other words to “query” the model for a specific term—you should type the word into the box called “query term.” The words in the results table are ordered in descending order according to their similarity to the query word.</p>
+							<p>Clicking on any of the words will navigate you results for that word in the Women Writers Online interface. (Note that the interface will always link to WWO, even when showing results from models trained on other corpora.) You can change the number of words that are displayed as the result of each query by moving the "Number of Words” slider on the toolbar. The default number of words selected to be displayed is ten.</p> 
+							<p>Try searching for the word “rose,” “food,” or even a color like “red” to get a feel for how the search function works. </p>		
+					</section>
+					
+					<section>
+						<h2>Compare</h2>
+						<p>The “Compare” tab window allows you to compare results for two separate models. Similarly to the “Home” tab, the “Compare” tab displays corpus names and model descriptions for both models that you select. You can select the models to query using the two drop-down menus located in the toolbar. You can also adjust the number of words to be displayed using the slider in the toolbar.</p>
 						
-						<div>
-							<p>For a tutorial of the Word Vector Interface’s features, and a walkthrough of several sample queries, see our video “<a href="https://www.youtube.com/watch?v=H8LDr5a2hlw">How to Use the Word Vector Interface</a>”:</p>
-							<iframe title="How to Use the Word Vector Interface" width="560" height="315" src="https://www.youtube.com/embed/H8LDr5a2hlw" style="border:0;" allow="accelerometer;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-						</div>
-					  
-						<div class="row">
-						  <div class="col-md-3 col-sm-6">
-								<div class="card h-100">
-									<div class="card-body">
-										<p class="card-text"><strong class="allcaps">Explore</strong> the Women Writers Online corpus using the Word Vector
-										Interface!</p>
-									  <p class="card-link"><a href="http://lab.wwp.northeastern.edu/wwvt/">Word Vector Interface</a></p>
-									</div>
-								</div>
-							</div>
-						  <div class="col-md-3 col-sm-6">
-								<div class="card h-100">
-									<div class="card-body">
-										<p class="card-text"><strong class="allcaps">Learn</strong> about text analysis through a lens crafted for users with a humanities background.</p>
-									  <p class="card-link"><a href="../../resources/sources/index.html">Annotated Sources</a></p>
-									</div>
-								</div>
-							</div>
-						  <div class="col-md-3 col-sm-6">
-								<div class="card h-100">
-									<div class="card-body">
-										<p class="card-text"><strong class="allcaps">Read</strong> some of the case studies written about
-										researchers’ experiences with the project’s corpora and tools.</p>
-									  <p class="card-link"><a href="../../resources/case-studies/index.html">Case Studies</a></p>
-									</div>
-								</div>
-							</div>
-						  <div class="col-md-3 col-sm-6">
-								<div class="card h-100">
-									<div class="card-body">
-										<p class="card-text"><strong class="allcaps">Discover</strong> assignments and learning activities for teaching these models in a classroom setting.</p>
-										<p class="card-link"><a href="../../teaching-exploration/assignments/index.html">Assignments</a></p>
-									</div>
-								</div>
-							</div>
-						</div>
+						<p>The “Compare” tab has one search box where you can type a query term. The results of querying each model with that single term will be displayed in tables below the corresponding model and corpus description. The table includes a ranking of the words according to their level of similarity to the query term as well as a clickable link, which will direct you to the WWO search results for that term.</p>
 						
+						<p>A good example query for the “Compare” tab is to try searching for “england” in the “WWO 16th and 17th Centuries” and the “VWWP and WWO” models. Another query to try is to search for “grace” in the “WWO 16th and 17th Centuries” and the “WWO 19th century” models.</p>
+					</section>
+					
+					<section>
+						<h2>Clusters</h2>
+						<p>The “Clusters” tab will display clusters of words which share semantic similarity (this can include antonyms) in a particular model. The toolkit generates one hundred and fifty clusters, or grouping of words which are close to one another in vector space, for the selected corpus. The words you will see on this tab are groupings of random words, for example ten words if you select that option, in those clusters. Like the previous tabs, you can use the dropdown to select a model. From the toolbar on the left, you can also reset the clusters, adjust the number of words included in each cluster, and download the cluster results. </p>
+						
+						<p>Each cluster is given a generic label “cluster_1,” “cluster_2,” “cluster_3,” and so on. Beneath each cluster label, are the words that are included in this cluster. The default number of words per cluster is ten, with one hundred and fifty being the highest number possible in the interface.</p> 
+						
+						<p>When you click “Reset clusters,” the toolkit randomly selects ten words (or more if that is what you selected in the toolbar) which may include some of the same words as before but also may include only words you haven’t seen before. We encourage you to download each set of words as you come across them if there is anything remarkable about a particular generation since any particular set of words may be reshuffled and reselected whenever you reset them.</p>
+						
+					</section>
+					
+					<section>
+						<h2>Operations</h2>
+						<p>The “Operations” tab allows you to perform vector math using a model of your choice. The toolbar includes a dropdown menu for selecting which model to use as well as a dropdown menu for selecting either addition, subtraction, analogies, or advanced operations—each of which enables a different operation. For more information on word vector operations, check out this <a href="../../resources/introduction/index.html">explainer</a>.</p>
+						
+						<p>In the tab window, a corpus and model description are provided for the corresponding model as well as descriptions of how each operation works and what conclusions can be drawn from the results. </p>
+						
+						<p>There are two text boxes, one labeled “Word 1” and the other “Word 2.” Using these boxes, you can type the two words you would like to perform a particular operation on. After typing the words, a table will be generated displaying the results of the top ten words calculated using the operation that was selected and the chosen words. The table includes cosine similarities, clickable words that are linked back to WWO, and word rankings. The words are ranked according to their cosine similarities. The number of entries displayed can be modified using the dropdown menu at the top of the table.</p>
+						
+						<p>To test out the addition operation, try adding words like “grace” and “beauty.” You might use the same pair of words in a subtraction operation or to even subtract “grace” from a word like “god.” To use more complicated operations, you can put analogies to the test such as “rich - poor + dress.”</p>
+					</section>
+					
+					<section>
+						<h2>Visualization</h2>
+						<p>The “Visualization” tab allows you to generate a number of visualizations based on a particular model selected. </p>
+						<p>In the toolbar, you have the option of selecting a model to visualize and a type of visualization to render. The toolbar and tab window change depending on what type of visualization is selected.</p> 
+						<h3>Word Cloud</h3>
+						<p>The default visualization style is word cloud. The word cloud toolbar includes sliders which allow you to adjust the similarity percentages displayed in the word cloud (for example, selecting fifteen will display words in a cloud which are at minimum fifteen percent similar to the query term), the maximum number of words to display, and the size of the plot. </p>
+						
+					</section>
+					
+					<section>
+						<h2>Learn more</h2>
+						<p>The Word Vector Interface is supported by a collection of further resources and <a href="../about-wwvt/toolkit-guide.html">readings</a>: </p>
+						<ul>
+							<li>Our <a href="../about-wwvt/index.html">About</a> page provides background information about the interface and the Women Writers Project more broadly. The page also offers a few resources for familiarizing yourself with word vectors and the toolkit before diving in.</li>  
+							<li>For more in depth information about the methodologies at work under the hood of the toolkit, please see our <a href="../../methodology/index.html">Methodology</a> page, which walks through the code we used to train the models, how we prepared the corpora, how we tested the models, and other details about the data and methods you will see at work in the interface. </li>
+							<li>If you’re interested in recreating some of the analyses you see in the interface on your own computer, the <a href="../../resources/glossary/index.html">Resources</a> page offers a set of code walkthroughs which are meant to be used as tools for learning how to run your own word vector code. In addition to these walkthroughs, the page also includes a glossary of some of the terminology used in the interface as well as a few case studies that were created with the interface’s analytical tools. </li>
+							<li>Finally, the <a href="../../teaching-exploration/index.html">Teaching</a> page includes resources for incorporating the toolkit interface in the classroom in addition to sample assignments.</li></ul>
+					</section>
 					
 				</div>
 			</div>
@@ -171,7 +170,7 @@
             <a href="https://wwp.northeastern.edu" class="nav-link">Northeastern University Women Writers Project</a>
             <a href="mailto:wwp@northeastern.edu" class="nav-link">WWP Email</a>
             <a href="https://wwp.northeastern.edu/blog/" class="nav-link">WWP Blog</a>
-            <a href="https://www.twitter.com/NUwwp" class="nav-link">WWP Twitter</a>
+            
           </address>
           <div class="navbar-nav align-self-start">
             <a href="../../about/navigate/site_map.html" class="nav-link">Site Map for the Women Writers Vector Toolkit</a>
