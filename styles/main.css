@@ -1,5 +1,5 @@
 body {
-  font-size: 18px;
+  font-size: 1.125rem;
   font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
@@ -74,6 +74,12 @@ body {
   }
 }
 
+/* The hamburger menu is triggered below 992px screen width. */
+@media (max-width: 991px) and (min-width: 769px) {
+  .navbar-nav {
+    /*flex-direction: row;*/
+  }
+}
 
 
 .carousel {
@@ -250,7 +256,7 @@ strong.allcaps:first-child {
   margin-right: 0.25rem;
 }
 
-a{ color:#006ee5; }
+a { color:#006ee5; }
 
 .navbar-dark .navbar-nav .nav-link {
 color: #d7d9dc;
