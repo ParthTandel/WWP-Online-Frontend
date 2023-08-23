@@ -36,51 +36,19 @@ body {
 }
 
 .nav-over-flow {
-  background-color: #343a40!important
+  background-color: #343a40 !important
 }
 
 .nav-item:hover {
   cursor: pointer;
 }
 
-
-@media only screen and (min-width:769px) {
+@media only screen and (min-width: 992px) {
+  /* When the navbar is in its fullest state, show dropdown menus on hover. */
   .dropdown:hover .dropdown-menu {
       display: block;
   }
-  .dropdown-submenu { /* Submenu is currently unused. */
-      position: relative !important;
-  }
-  
-  .dropdown-submenu  > .dropdown-menu {
-      top: 0 !important;
-      left: 100% !important;
-      margin-top: -6px !important;
-      margin-left: -1px !important;
-      border-radius: 0 !important;
-  }
-  
-  .dropdown-submenu:hover > .dropdown-menu {
-      display: block !important;
-  }
-  
-  .dropdown-submenu > a:after {
-      display: block;
-      content: "\f105";
-      margin-top: -18px;
-      right: 15px;
-      position: absolute;
-      font-weight: 300;
-  }
 }
-
-/* The hamburger menu is triggered below 992px screen width. */
-@media (max-width: 991px) and (min-width: 769px) {
-  .navbar-nav {
-    /*flex-direction: row;*/
-  }
-}
-
 
 .carousel {
   margin: 1em 0;
