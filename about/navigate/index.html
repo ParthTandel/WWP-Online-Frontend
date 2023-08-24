@@ -88,31 +88,31 @@
 					<section>
 					  <h1>Navigating the Word Vector Interface</h1>
 						<p>
-							As part of the Women Writers Vector Toolkit, the Word Vector Interface serves as a space for researchers, instructors, and students to explore text analysis with word vectors through a set of pre-trained models. Some of the models include those trained using the Women Writers Online collection, the Victorian Women Writers Project collection, Early English Books Online, and selected sub-collections based on genre or time period. 
+							As part of the Women Writers Vector Toolkit, the <a href="http://lab.wwp.northeastern.edu/wwvt/">Word Vector Interface</a> serves as a space for researchers, instructors, and students to explore text analysis with word vectors through a set of pre-trained models. Some of the models include those trained using the Women Writers Online collection, the Victorian Women Writers Project collection, Early English Books Online, and selected sub-collections based on genre or time period. 
 						</p>
 						<p>
-							The interface is designed to be usable with no knowledge of code required. The interface allows you to explore different facets of word vectors—from clustering to comparison to visualization. For all levels of experience with word vectors, the interface is an excellent starting point for those who are interested in learning more about what kinds of analysis are possible through word vectors and word embedding models. The Women Writers Project also offers an <a href="../../resources/introduction/index.html">introduction</a> to word embedding models available for those interested in more in-depth introductory material.	
+							The interface is designed to be usable with no knowledge of code required. The interface allows you to explore different facets of word vectors—from clustering to comparison to visualization. The interface aims to be starting point for those who are interested in learning more about what kinds of analysis are possible through word vectors and word embedding models. The Women Writers Project also offers an <a href="../../resources/introduction/index.html">introduction</a> to word embedding models available for those interested in more in-depth introductory material.	
+						</p>
+						<p>To get started, navigate to the <a href="http://lab.wwp.northeastern.edu/wwvt/">Word Vector Interface</a>.
+							With the toolbar on the left side of the screen, you can select the model you are interested in and adjust the settings for the type of analysis you have selected. The results of your analysis will appear to the right of the toolbar, in the main window of the interface. This window offers a series of five tabs, each of which facilitates a particular form of analysis. You can begin by selecting a model of interest, navigating to the relevant tab, and then adjusting any relevant settings in the toolbar. 	
 						</p>
 						<p>
-							With the toolbar on the left side of the screen, you can select the model you are interested in and adjust the settings for the type of analysis you have selected. The results of your analysis will appear to the right of the toolbar, in the main window of the interface. This window offers a series of five tabs, each of which facilitates a particular form of analysis. You can begin by selecting a model of interest, navigating to the relevant tab, and then adjusting any relevant settings in the toolbar that are specific to the analysis offered through that tab. 	
-						</p>
-						<p>
-							Below, you will find a description of each tab as well as information on how to use each form of analysis.
+							Below, you will find a description of each tab as well as information on how to use each form of analysis. You might also find this <a href="query_experimentation_suggestions.html">list of sample queries</a> useful.
 						</p>
 					</section>
 					
 					<section>
 						<h2>Home</h2>
-						<p>The “Home” tab allows you to search for a specific word in the model that you have selected in the toolbar and display the words which are closest to your search word in vector space. </p>
+						<p>The “Home” tab allows you to search for a specific word in the model that you have selected and display the words which are closest to your search word in vector space. </p>
 						<p>The window displays the model that is currently selected (the default is the WWO Full Corpus) and offers a brief description of the corpus that the model was trained on. You can use the dropdown on the left to choose from the available models. </p>
-						<p>In order to search for a word of interest—or in other words to “query” the model for a specific term—you should type the word into the box called “query term.” The words in the results table are ordered in descending order according to their similarity to the query word.</p>
-							<p>Clicking on any of the words will navigate you results for that word in the Women Writers Online interface. (Note that the interface will always link to WWO, even when showing results from models trained on other corpora.) You can change the number of words that are displayed as the result of each query by moving the "Number of Words” slider on the toolbar. The default number of words selected to be displayed is ten.</p> 
+						<p>In order to search for a word of interest—in other words, to “query” the model for a specific term—you should type the word into the box labeled “query term.” The words in the results table are in descending order according to their similarity to the query word.</p>
+							<p>Clicking on any of the words will navigate you to results for that word in the Women Writers Online collection. (Note that the interface will always link to WWO, even when showing results from models trained on other corpora.) You can change the number of words that are displayed as the result of each query by moving the "Number of Words” slider on the toolbar. The default number of words displayed is ten.</p> 
 							<p>Try searching for the word “rose,” “food,” or even a color like “red” to get a feel for how the search function works. </p>		
 					</section>
 					
 					<section>
 						<h2>Compare</h2>
-						<p>The “Compare” tab window allows you to compare results for two separate models. Similarly to the “Home” tab, the “Compare” tab displays corpus names and model descriptions for both models that you select. You can select the models to query using the two drop-down menus located in the toolbar. You can also adjust the number of words to be displayed using the slider in the toolbar.</p>
+						<p>The “Compare” tab window allows you to compare results for two separate models. Similarly to the “Home” tab, the “Compare” tab displays corpus names and model descriptions for the models that you select. You can select the models to query using the two drop-down menus located in the toolbar. You can also adjust the number of words to be displayed using the slider in the toolbar.</p>
 						
 						<p>The “Compare” tab has one search box where you can type a query term. The results of querying each model with that single term will be displayed in tables below the corresponding model and corpus description. The table includes a ranking of the words according to their level of similarity to the query term as well as a clickable link, which will direct you to the WWO search results for that term.</p>
 						
@@ -121,11 +121,14 @@
 					
 					<section>
 						<h2>Clusters</h2>
-						<p>The “Clusters” tab will display clusters of words which share semantic similarity (this can include antonyms) in a particular model. The toolkit generates one hundred and fifty clusters, or grouping of words which are close to one another in vector space, for the selected corpus. The words you will see on this tab are groupings of random words, for example ten words if you select that option, in those clusters. Like the previous tabs, you can use the dropdown to select a model. From the toolbar on the left, you can also reset the clusters, adjust the number of words included in each cluster, and download the cluster results. </p>
+						<p>The “Clusters” tab will display clusters of words which share semantic similarity (this can include antonyms) in a particular model. The toolkit generates one hundred and fifty clusters—or grouping of words which are close to one another in vector space—for the selected corpus and model. With the “Clusters” tab, you can see the most relevant words for a randomly-selected set of clusters. As with the other tabs, you can use the dropdown to select a model. From the toolbar on the left, you can also reset the clusters, adjust the number of words included in each cluster, and download the cluster results.
+							</p>
 						
-						<p>Each cluster is given a generic label “cluster_1,” “cluster_2,” “cluster_3,” and so on. Beneath each cluster label, are the words that are included in this cluster. The default number of words per cluster is ten, with one hundred and fifty being the highest number possible in the interface.</p> 
+						<p>Each cluster is given a generic label “cluster_1,” “cluster_2,” “cluster_3,” and so on. The default number of words per cluster is ten, with one hundred and fifty being the highest number possible in the interface.</p> 
 						
-						<p>When you click “Reset clusters,” the toolkit randomly selects ten words (or more if that is what you selected in the toolbar) which may include some of the same words as before but also may include only words you haven’t seen before. We encourage you to download each set of words as you come across them if there is anything remarkable about a particular generation since any particular set of words may be reshuffled and reselected whenever you reset them.</p>
+						<p>When you click “Reset clusters,” the toolkit randomly selects a new set of clusters and their related terms. If you would like to see the full set of clusters and related words for a model, download  that model’s data with “Download” button. 
+							
+							</p>
 						
 					</section>
 					
@@ -133,9 +136,9 @@
 						<h2>Operations</h2>
 						<p>The “Operations” tab allows you to perform vector math using a model of your choice. The toolbar includes a dropdown menu for selecting which model to use as well as a dropdown menu for selecting either addition, subtraction, analogies, or advanced operations—each of which enables a different operation. For more information on word vector operations, check out this <a href="../../resources/introduction/index.html">explainer</a>.</p>
 						
-						<p>In the tab window, a corpus and model description are provided for the corresponding model as well as descriptions of how each operation works and what conclusions can be drawn from the results. </p>
+						<p>In the main window, a corpus and model description are provided for the corresponding model, along with descriptions of how each operation works and what conclusions can be drawn from the results. </p>
 						
-						<p>There are two text boxes, one labeled “Word 1” and the other “Word 2.” Using these boxes, you can type the two words you would like to perform a particular operation on. After typing the words, a table will be generated displaying the results of the top ten words calculated using the operation that was selected and the chosen words. The table includes cosine similarities, clickable words that are linked back to WWO, and word rankings. The words are ranked according to their cosine similarities. The number of entries displayed can be modified using the dropdown menu at the top of the table.</p>
+						<p>There are two text boxes, one labeled “Word 1” and the other “Word 2.” Using these boxes, you can type the two words you would like to perform a particular operation on. After you enter two terms, a table will be generated displaying the results calculated by using the operation that was selected on the chosen words. The table includes cosine similarities and clickable words that are linked back to WWO. The number of entries displayed can be modified using the dropdown menu at the top of the table.</p>
 						
 						<p>To test out the addition operation, try adding words like “grace” and “beauty.” You might use the same pair of words in a subtraction operation or to even subtract “grace” from a word like “god.” To use more complicated operations, you can put analogies to the test such as “rich - poor + dress.”</p>
 					</section>
@@ -147,7 +150,14 @@
 						<p>The Word Cloud visualization offers a spatial view of the closest words to a query term. The query term you enter appears in the center of the cloud, surrounded by terms whose proximity is based on cosine similarity to the input term. Terms with higher cosine similarities are closer to the center. The terms are also color-coded to show cosine similarity, as outlined in the key below.
 						</p>
 						<p>In the sidebar, the top slider allows you to set a threshold for the cosine similarity of displayed terms. The middle slider allows you to control the maximum number of words displayed, and the bottom slider controls the size of the plot image. </p>
-						
+						<h3>Pairs Plot</h3>
+						<p>This tab allows you to plot the words closest to a pair of query terms, 
+							according to cosine similarity. To see how it works, input two terms in the 
+							two boxes. You can use the slider to control the maximum number of words to 
+							plot.</p>
+						<p>For example, try plotting “happy” and “sad.” You’ll see that some terms are 
+							close to "happy" but far from “sad”; some terms are close to “sad” but far 
+							from “happy”; and some terms are close to both “happy” and “sad”.</p>
 					</section>
 					
 					<section>
